@@ -1,0 +1,134 @@
+material colored
+{
+    u_worldViewProjectionMatrix = WORLD_VIEW_PROJECTION_MATRIX
+    
+    renderState
+    {
+        cullFace = true
+        depthTest = true
+    }
+    
+    technique
+    {
+        pass 
+        {
+            vertexShader = res/shaders/colored.vert
+            fragmentShader = res/shaders/colored.frag
+        }
+    }
+}
+
+material textured
+{
+    u_worldViewProjectionMatrix = WORLD_VIEW_PROJECTION_MATRIX
+
+    sampler u_diffuseTexture
+    {
+        mipmap = true
+        wrapS = CLAMP
+        wrapT = CLAMP
+        minFilter = LINEAR_MIPMAP_LINEAR
+        magFilter = LINEAR
+    }
+
+    renderState
+    {
+        cullFace = true
+        depthTest = true
+        blend = true
+        blendSrc = SRC_ALPHA
+        blendDst = ONE_MINUS_SRC_ALPHA
+    }
+    
+    technique
+    {
+        pass 
+        {
+            vertexShader = res/shaders/textured.vert
+            fragmentShader = res/shaders/textured.frag
+        }
+    }
+}
+
+material 13___Default : textured
+{
+    u_ambientColor = 0.588235, 0.588235, 0.588235
+    u_cameraPosition = CAMERA_WORLD_POSITION
+    u_inverseTransposeWorldViewMatrix = INVERSE_TRANSPOSE_WORLD_VIEW_MATRIX
+    u_specularExponent = 2
+
+    sampler u_diffuseTexture
+    {
+        path = fbm/jt1.png
+        wrapS = REPEAT
+        wrapT = REPEAT
+    }
+
+    technique
+    {
+        pass 
+        {
+            defines = SPECULAR
+        }
+    }
+}
+
+material 14___Default : colored
+{
+    u_ambientColor = 0, 0.423529, 1
+    u_cameraPosition = CAMERA_WORLD_POSITION
+    u_diffuseColor = 0, 0.423529, 1, 1
+    u_inverseTransposeWorldViewMatrix = INVERSE_TRANSPOSE_WORLD_VIEW_MATRIX
+    u_specularExponent = 2
+    
+    technique
+    {
+        pass 
+        {
+            defines = SPECULAR
+        }
+    }
+}
+
+material bai : colored
+{
+    u_ambientColor = 1, 1, 1
+    u_diffuseColor = 1, 1, 1, 0.5
+    u_specularExponent = 2
+
+    renderState
+    {
+        blend = true
+        blendSrc = SRC_ALPHA
+        blendDst = ONE_MINUS_SRC_ALPHA
+    }
+    technique
+    {
+        pass 
+        {
+            defines = SPECULAR
+        }
+    }
+}
+
+material hei : colored
+{
+    u_ambientColor = 0, 0, 0
+    u_diffuseColor = 0, 0, 0, 0.5
+    u_specularExponent = 2
+
+    renderState
+    {
+        blend = true
+        blendSrc = SRC_ALPHA
+        blendDst = ONE_MINUS_SRC_ALPHA
+    }
+    technique
+    {
+        pass 
+        {
+            defines = SPECULAR
+        }
+    }
+}
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_dialog"
+        android:minHeight="162dp"
+        android:paddingBottom="24dp"
+        android:paddingTop="24dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:id="@+id/tv_update_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/login_out_title"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/gray_color_level_5"
+            android:textSize="@dimen/normal_text_size"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_update_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="5"
+                android:minHeight="30dp"
+                android:textColor="@color/gray_color_level_5"
+                android:textSize="@dimen/medium_text_size"
+                tools:text="确认退出登录?" />
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/dialog_generic_layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+
+            <com.hiscene.presentation.ui.widget.HiAlphaButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_common_dialog_cancel_normal"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textStyle="bold"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/normal_text_size" />
+
+            <com.hiscene.presentation.ui.widget.HiAlphaButton
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/btn_common_dialog_confirm_normal"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textStyle="bold"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/normal_text_size" />
+
+            <com.hiscene.presentation.ui.widget.HiAlphaButton
+                android:id="@+id/btn_ok_second"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/btn_common_dialog_confirm_normal"
+                android:gravity="center"
+                android:visibility="gone"
+                tools:text="离开协作"
+                android:textStyle="bold"
+                android:textColor="@drawable/btn_common_dialog_confirm_text_color_selector"
+                android:textSize="@dimen/normal_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

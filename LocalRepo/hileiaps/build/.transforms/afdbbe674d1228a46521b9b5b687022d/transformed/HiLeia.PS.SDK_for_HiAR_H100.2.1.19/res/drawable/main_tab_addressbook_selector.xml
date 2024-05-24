@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- When selected-->
+    <item android:drawable="@drawable/main_tab_addressbook"
+        android:state_checked="true" />
+    <item android:drawable="@drawable/main_tab_addressbook_normal"
+        android:state_checked="false" />
+    <!-- When not selected-->
+    <item android:drawable="@drawable/main_tab_addressbook_normal" />
+</selector>

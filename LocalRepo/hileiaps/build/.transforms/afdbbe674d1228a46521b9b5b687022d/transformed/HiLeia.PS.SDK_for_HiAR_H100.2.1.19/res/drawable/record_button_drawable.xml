@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:angle="360"
+                android:endColor="#33ff6666"
+                android:startColor="#33ff3333"
+                android:type="linear"
+                android:useLevel="true" />
+        </shape>
+    </item>
+
+    <item android:bottom="10dp" android:left="10dp"
+            android:top="10dp" android:right="10dp">
+        <bitmap android:src="@drawable/bretha_icon_play" />
+    </item>
+
+</layer-list>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlActionSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom">
+
+    <TextView
+        android:id="@+id/pop_tv_first"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/pop_devide_line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/pop_rounded_top_no_padding"
+        android:gravity="center"
+        android:text="@string/take_picture"
+        android:textColor="@color/btn_pop_text_color_selector"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/pop_devide_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/pop_tv_second"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/default_bg" />
+
+    <TextView
+        android:id="@+id/pop_tv_second"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/pop_tv_cancel"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/pop_rounded_bottom_no_padding"
+        android:gravity="center"
+        android:text="@string/select_from_album"
+        android:textColor="@color/btn_pop_text_color_selector"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/pop_tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/desc_rounded_no_padding"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/btn_pop_cancel_text_color_selector"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--用于放置侧面的所有按钮-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_pointer_toolbar"
+        android:layout_width="@dimen/toolbar_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/vertical_toolbar_margin_end"
+        android:background="@drawable/bg_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+            android:id="@+id/btn_pointer_color"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_marginTop="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+            android:background="@drawable/icon_colouring_blue"
+            app:layout_constraintBottom_toTopOf="@id/btn_free_pointer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+            android:id="@+id/btn_free_pointer"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_marginTop="@dimen/vertical_toolbar_icon_margin_top"
+            android:layout_marginBottom="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+            android:background="@drawable/icon_close_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_pointer_color"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        layout="@layout/color_layout"
+        android:visibility="gone"
+        android:layout_width="@dimen/toolbar_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/vertical_toolbar_margin_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cl_pointer_toolbar"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

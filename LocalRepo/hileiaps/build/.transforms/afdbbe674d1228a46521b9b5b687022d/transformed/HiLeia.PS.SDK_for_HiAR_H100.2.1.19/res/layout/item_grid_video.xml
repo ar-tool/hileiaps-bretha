@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/img_grid_mic"
+        android:layout_width="@dimen/avatar_status_icon_width"
+        android:layout_height="@dimen/avatar_status_icon_height"
+        android:background="@drawable/ic_voice_bg"
+        android:src="@drawable/icon_voice"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:padding="5dp"
+        android:layout_alignBottom="@id/video_view"
+        android:layout_alignStart="@id/video_view"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/video_name"
+        style="@style/linear_displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_grid_mic"
+        android:layout_alignTop="@id/img_grid_mic"
+        android:layout_alignBottom="@id/img_grid_mic"
+        android:gravity="center"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/medium_text_size"
+        tools:text="王二小"
+        tools:textColor="@color/blue_color" />
+
+    <TextView
+        android:id="@+id/video_number"
+        style="@style/linear_displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_alignTop="@id/img_grid_mic"
+        android:layout_alignBottom="@id/img_grid_mic"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/medium_text_size"
+        tools:text="窗口一" />
+</RelativeLayout>

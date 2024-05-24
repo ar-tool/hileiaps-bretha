@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/monk_relative_root"
+    android:layout_width="72dp"
+    android:layout_height="128dp"
+    android:background="@drawable/bg_float_call_layout">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/video_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#00000000"
+        android:translationX="0dp"
+        android:translationY="0dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/float_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_living"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/label_back_to_talking"
+            android:textColor="@color/red_float_call_hint"
+            android:textSize="@dimen/extra_small_text_size" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/clickView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00ffffff" />
+
+</FrameLayout>

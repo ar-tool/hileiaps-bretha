@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_toast">
+
+    <ImageView
+        android:id="@+id/img_off"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/title_layout"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/icon_warning"
+        tools:ignore="contentDescription"/>
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_off"
+        app:layout_constraintBottom_toTopOf="@id/content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dip"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/normal_text_size"
+            tools:text="你有新的消息！" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_layout"
+        app:layout_constraintBottom_toTopOf="@id/button_layout">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/normal_text_size"
+            tools:text="有新版本啦！！这一个全新的版本等待你来开启！" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/txt_confirm"
+            android:layout_width="144dp"
+            android:layout_height="64dp"
+            android:background="@drawable/btn_bluex"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="@android:string/ok"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/normal_text_size" />
+
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="144dp"
+            android:layout_height="64dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@id/txt_confirm"
+            android:background="@drawable/btn_redx"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="@android:string/cancel"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/normal_text_size" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

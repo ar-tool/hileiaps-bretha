@@ -1,0 +1,2032 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="call_resolutions">
+        <item>@string/P360</item>
+        <item>@string/P720</item>
+        <item>@string/P1080</item>
+    </string-array>
+    <array name="contactSideBarLetters">
+        <item>\u0023</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </array>
+    <integer-array name="google_colors">
+        <item>@color/google_red</item>
+        <item>@color/google_blue</item>
+        <item>@color/google_yellow</item>
+        <item>@color/google_green</item>
+    </integer-array>
+    <integer-array name="permission_icon">
+        <item>@drawable/permission_ic_storage</item>
+        <item>@drawable/permission_ic_camera</item>
+<!--        <item>@mipmap/permission_ic_location</item>-->
+        <item>@drawable/permission_ic_phone</item>
+        <item>@drawable/permission_ic_micro_phone</item>
+<!--        <item>@mipmap/permission_ic_calendar</item>-->
+<!--        <item>@mipmap/permission_ic_contacts</item>-->
+<!--        <item>@mipmap/permission_ic_sms</item>-->
+<!--        <item>@mipmap/permission_ic_sensors</item>-->
+    </integer-array>
+    <string-array name="permission_info">
+        <item>允许应用读取、写入外部存储</item>
+        <item>允许应用访问摄像头进行拍照</item>
+<!--        <item>允许应用获取定位信息</item>-->
+        <item>允许应用访问电话状态</item>
+        <item>允许应用通过手机或耳机的麦克录制声音</item>
+<!--        <item>允许应用读取用户的日程信息</item>-->
+<!--        <item>允许应用访问联系人通讯录信息</item>-->
+<!--        <item>允许应用获取短信信息</item>-->
+<!--        <item>允许应用获取传感器信息</item>-->
+    </string-array>
+    <string-array name="permission_title">
+        <item>文件存储</item>
+        <item>相机相册</item>
+<!--        <item>位置信息</item>-->
+        <item>电话状态</item>
+        <item>录制声音</item>
+<!--        <item>日程信息</item>-->
+<!--        <item>通讯录</item>-->
+<!--        <item>短信信息</item>-->
+<!--        <item>传感器</item>-->
+    </string-array>
+    <array name="pull_refresh_colors">
+        <item>@color/color_primary</item>
+        <item>@color/color_primary</item>
+        <item>@color/color_primary</item>
+        <item>@color/color_primary</item>
+    </array>
+    <string-array name="voice_system_command">
+        <item>返回</item>
+        <item>打开第X项</item>
+    </string-array>
+    <attr format="boolean" name="centered"/>
+    <attr format="boolean" name="darkMode"/>
+    <attr format="reference" name="disable_drawable"/>
+    <attr format="reference" name="enable_drawable"/>
+    <attr format="color|reference" name="navigationItemTextColor"/>
+    <attr format="reference" name="record_drawable"/>
+    <attr format="color|reference" name="referenceBackground"/>
+    <attr format="color|reference" name="referenceText"/>
+    <attr format="enum" name="resize_mode">
+        <enum name="fit" value="0"/>
+        <enum name="fixed_width" value="1"/>
+        <enum name="fixed_height" value="2"/>
+        <enum name="fill" value="3"/>
+        <enum name="zoom" value="4"/>
+    </attr>
+    <attr format="reference" name="running_drawable"/>
+    <attr format="color|reference" name="selectableItemBackgroundGeneral"/>
+    <attr format="color" name="selectedColor"/>
+    <attr format="reference" name="stop_drawable"/>
+    <attr format="dimension" name="strokeWidth"/>
+    <attr format="color|reference" name="switchCompatActivated"/>
+    <attr format="color|reference" name="switchCompatForeground"/>
+    <attr format="color|reference" name="switchCompatThumbNormal"/>
+    <attr format="color" name="unselectedColor"/>
+    <attr format="color|reference" name="widgetBackground"/>
+    <attr format="color|reference" name="widgetBackgroundDark"/>
+    <attr format="color|reference" name="widgetBackgroundTitle"/>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <bool name="default_underline_indicator_fades">true</bool>
+    <color name="app_color_blue_3_disabled">#7FEBF9FF</color>
+    <color name="avatar_border_color">#ffCBE4FF</color>
+    <color name="avatar_text_color">#ffffffff</color>
+    <color name="background_dark">#000000</color>
+    <color name="bg_conference">#fff2f3f6</color>
+    <color name="bg_in_call">#2D3037</color>
+    <color name="bg_invite_dark_gray_color">#24262C</color>
+    <color name="bg_invite_gray_color">#ff2d3037</color>
+    <color name="bg_invite_selected_gray_color">#ff373B45</color>
+    <color name="black_color">#000000</color>
+    <color name="black_color_light">#222222</color>
+    <color name="blue_check_color">#909dec</color>
+    <color name="blue_color">#3891F2</color>
+    <color name="blue_color_level_0">#3191D8</color>
+    <color name="blue_color_level_1">#0195ff</color>
+    <color name="blue_color_level_2">#334bdd</color>
+    <color name="blue_color_level_3">#4266f5</color>
+    <color name="blue_color_level_4">#4058e1</color>
+    <color name="blue_color_level_5">#AAC8FF</color>
+    <color name="blue_color_level_6">#0529FC</color>
+    <color name="blue_color_level_7">#0B03E6</color>
+    <color name="blue_color_level_8">#4D71FF</color>
+    <color name="button_disable_color">#774266F5</color>
+    <color name="chat_title_bg">#427BED</color>
+    <color name="colorCircleImageViewBorder">#e4e9ee</color>
+    <color name="colorControlActivated_dark">#e1bd0c</color>
+    <color name="colorControlActivated_light">#0195ff</color>
+    <color name="colorForeground_dark">#9e8403</color>
+    <color name="colorForeground_light">#006cb9</color>
+    <color name="colorSwitchThumbNormal_dark">#ff444444</color>
+    <color name="colorSwitchThumbNormal_light">#ff666666</color>
+    <color name="color_accent">#4266F5</color>
+    <color name="color_blue">#4266F5</color>
+    <color name="color_freeze_border">#008FFF</color>
+    <color name="color_incall_item_avatar_bg">#f2373B45</color>
+    <color name="color_incall_item_avatar_text_bg">#77373b45</color>
+    <color name="color_message_bg">#4c000000</color>
+    <color name="color_message_error">#ffff0000</color>
+    <color name="color_message_info">#ffffffff</color>
+    <color name="color_message_title">#0079ff</color>
+    <color name="color_message_warning">#FF5722</color>
+    <color name="color_pop_text">#2CA298</color>
+    <color name="color_primary">#FFFFFF</color>
+    <color name="color_primary_dark">#FFFFFF</color>
+    <color name="color_screenshare_bg">#ffff3921</color>
+    <color name="color_switch_mode_hint">#009DFF</color>
+    <color name="color_welcome_bg">#8C000000</color>
+    <color name="color_welcome_hint">#7fffffff</color>
+    <color name="common_avatar_mask_color">#99373b45</color>
+    <color name="common_choose_color">#FF4266F5</color>
+    <color name="common_text_primary">#ffffff</color>
+    <color name="contact_sidebar_bgcolor">#bef9b81b</color>
+    <color name="contact_sidebar_textcolor">#333333</color>
+    <color name="defaultTextColor">#FFFFFF</color>
+    <color name="default_bg">#f4f4f4</color>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#CC1A1E28</color>
+    <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
+    <color name="delete_color">#ffEB5841</color>
+    <color name="dialog_loading_bg_color">#cfdddddd</color>
+    <color name="empty_side_bg">#000000</color>
+    <color name="errorColor">#C93437</color>
+    <color name="file_bottom_line">#ECECEC</color>
+    <color name="file_picker_bg">#f9f9f9</color>
+    <color name="file_picker_des">#86848B</color>
+    <color name="file_picker_title">#4A4A4A</color>
+    <color name="frame">#86C166</color>
+    <color name="google_blue">#FF375BF1</color>
+    <color name="google_green">#FF34A350</color>
+    <color name="google_red">#FFC93437</color>
+    <color name="google_yellow">#FFF7D23E</color>
+    <color name="gray_color_level_0">#f4f4f4</color>
+    <color name="gray_color_level_1">#dddddd</color>
+    <color name="gray_color_level_10">#FF696E78</color>
+    <color name="gray_color_level_11">#CC2D3037</color>
+    <color name="gray_color_level_2">#bbbbbb</color>
+    <color name="gray_color_level_3">#999999</color>
+    <color name="gray_color_level_4">#666666</color>
+    <color name="gray_color_level_5">#333333</color>
+    <color name="gray_color_level_6">#2f333333</color>
+    <color name="gray_color_level_7">#afffffff</color>
+    <color name="gray_color_level_8">#515151</color>
+    <color name="gray_color_level_9">#B2B4BE</color>
+    <color name="group_avatar_bg">#dfdfdf</color>
+    <color name="guide">#AA86C166</color>
+    <color name="handle">#86C166</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="infoColor">#3F51B5</color>
+    <color name="invite_color">#FF0084FF</color>
+    <color name="lib_blue_color_level_0">#3191D8</color>
+    <color name="lib_color_primary_dark">#4D68D5</color>
+    <color name="lib_gray_color_level_0">#f4f4f4</color>
+    <color name="lib_gray_color_level_1">#dddddd</color>
+    <color name="lib_gray_color_level_2">#bbbbbb</color>
+    <color name="lib_gray_color_level_3">#999999</color>
+    <color name="lib_gray_color_level_4">#666666</color>
+    <color name="list_divider_dark">#ff000000</color>
+    <color name="list_divider_light">#fff2f3f6</color>
+    <color name="list_select_divider_dark">#33000000</color>
+    <color name="list_select_divider_light">#ffe4e4e4</color>
+    <color name="main_bottom_gradient_end">#26333333</color>
+    <color name="main_bottom_gradient_start">#00FFFFFF</color>
+    <color name="main_theme_color">#0195ff</color>
+    <color name="main_theme_text_color">#3A52DE</color>
+    <color name="net_error_bg_color">#FBEEED</color>
+    <color name="normalColor">#353A3E</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="permission_dialog_btn_bg_color">#07b4a2</color>
+    <color name="permission_dialog_btn_text_color">#FFFFFF</color>
+    <color name="permission_dialog_img_color">#000000</color>
+    <color name="permission_dialog_message_color">#87000000</color>
+    <color name="permission_dialog_solid_color">#ffffffff</color>
+    <color name="permission_dialog_title_color">#000000</color>
+    <color name="permissionx_default_dialog_bg">#fff</color>
+    <color name="permissionx_split_line">#e0e0e0</color>
+    <color name="permissionx_text_color">#212121</color>
+    <color name="permissionx_tint_color">#1972e8</color>
+    <color name="pop_btn_color">#3A52DE</color>
+    <color name="red_avatar_mask_color">#99CD484B</color>
+    <color name="red_color">#E21C1C</color>
+    <color name="red_float_call_hint">#FF3324</color>
+    <color name="search_accent">#4266F5</color>
+    <color name="select_contact_color">#FF666666</color>
+    <color name="select_divide_color">#FFF2F3F6</color>
+    <color name="selectable_item_background_general_normal_dark">#ff3c3c3c</color>
+    <color name="selectable_item_background_general_normal_light">@android:color/white</color>
+    <color name="selectable_item_background_general_pressed_dark">#ff444444</color>
+    <color name="selectable_item_background_general_pressed_light">#ffeeeeee</color>
+    <color name="selectable_item_background_general_ripple_dark">#ff666666</color>
+    <color name="selectable_item_background_general_ripple_light">#ffcccccc</color>
+    <color name="successColor">#388E3C</color>
+    <color name="text_primary_dark">#de000000</color>
+    <color name="text_primary_disabled_dark">#4dffffff</color>
+    <color name="text_primary_disabled_light">#39000000</color>
+    <color name="text_primary_light">#ffffffff</color>
+    <color name="text_secondary_dark">#b3ffffff</color>
+    <color name="text_secondary_disabled_dark">#36ffffff</color>
+    <color name="text_secondary_disabled_light">#24000000</color>
+    <color name="text_secondary_light">#8a000000</color>
+    <color name="translucent_status">#66000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="underline_selected_color">#FF4266F5</color>
+    <color name="underline_unselected_color">#774266F5</color>
+    <color name="video_gray">#aadddddd</color>
+    <color name="voice_command_bg">#B3000000</color>
+    <color name="voice_command_bg_transparent">#00000000</color>
+    <color name="voice_split_color">#59FFFFFF</color>
+    <color name="warningColor">#FFA900</color>
+    <color name="white_board_bg">#213B3E</color>
+    <color name="white_color">#ffffff</color>
+    <color name="window_background_dark">#ff303030</color>
+    <color name="window_background_light">#fff2f3f6</color>
+    <color name="workspace_item_disable_color">#80FFFFFF</color>
+    <color name="workspace_item_enable_color">#FFFFFF</color>
+    <color name="workspace_item_running_color">#5296FF</color>
+    <dimen name="account_detail_list_item_height">55dp</dimen>
+    <dimen name="anim_text_height">28dp</dimen>
+    <dimen name="app_bar_elevation">4dp</dimen>
+    <dimen name="app_bar_size">56dp</dimen>
+    <dimen name="avatar_border_size">1dp</dimen>
+    <dimen name="avatar_status_icon_height">28dp</dimen>
+    <dimen name="avatar_status_icon_width">28dp</dimen>
+    <dimen name="big_text_size">20sp</dimen>
+    <dimen name="button_size">48dp</dimen>
+    <dimen name="color_item_icon_height">46dp</dimen>
+    <dimen name="color_item_icon_width">46dp</dimen>
+    <dimen name="common_item_margin_end">40dp</dimen>
+    <dimen name="common_item_margin_start">40dp</dimen>
+    <dimen name="contact_item_margin_left">54dp</dimen>
+    <dimen name="contact_list_content_margin_left">24dp</dimen>
+    <dimen name="contact_list_icon_height">38dp</dimen>
+    <dimen name="contact_list_icon_width">38dp</dimen>
+    <dimen name="contact_list_item_margin_bottom">12dp</dimen>
+    <dimen name="contact_list_item_margin_top">12dp</dimen>
+    <dimen name="contact_list_item_text_margin_left">12dp</dimen>
+    <dimen name="contact_list_summery_margin_right">24dp</dimen>
+    <dimen name="contact_select_list_icon_height">30dp</dimen>
+    <dimen name="contact_select_list_icon_width">30dp</dimen>
+    <dimen name="contact_selected_list_icon_size">34dp</dimen>
+    <dimen name="contact_sidebar_circleRadius">24dp</dimen>
+    <dimen name="contact_sidebar_hintTextSize">32sp</dimen>
+    <dimen name="contact_sidebar_item_radius">30dp</dimen>
+    <dimen name="contact_sidebar_padding">20dp</dimen>
+    <dimen name="default_circle_indicator_radius">4dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="divide_height_size">1dp</dimen>
+    <dimen name="dp1">1dp</dimen>
+    <dimen name="dp27">27dp</dimen>
+    <dimen name="dp3">3dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp6">6dp</dimen>
+    <dimen name="drawer_layout_width">256dp</dimen>
+    <dimen name="extra_small_text_size">10sp</dimen>
+    <dimen name="float_action_button_size">48dp</dimen>
+    <dimen name="freeze_border_size">6dp</dimen>
+    <dimen name="fullscreen_mic_icon_height">28dp</dimen>
+    <dimen name="fullscreen_mic_icon_width">28dp</dimen>
+    <dimen name="grid_item_padding">10dp</dimen>
+    <dimen name="guide_text_content_size">16sp</dimen>
+    <dimen name="guide_text_margin">25dp</dimen>
+    <dimen name="guide_text_title_size">26sp</dimen>
+    <dimen name="hangup_icon_height">40dp</dimen>
+    <dimen name="hangup_icon_width">40dp</dimen>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="horizontal_toolbar_icon_margin_start">16dp</dimen>
+    <dimen name="horizontal_toolbar_icon_width">54dp</dimen>
+    <dimen name="horizontal_toolbar_margin_bottom">16dp</dimen>
+    <dimen name="incall_avatar_margin">8dp</dimen>
+    <dimen name="incall_avatar_panel_radius">4dp</dimen>
+    <dimen name="incall_avatar_panel_space">8dp</dimen>
+    <dimen name="invite_icon_height">40dp</dimen>
+    <dimen name="invite_icon_width">40dp</dimen>
+    <dimen name="jumbo_text_size">24sp</dimen>
+    <dimen name="list_font_size">18sp</dimen>
+    <dimen name="list_height_min">32dp</dimen>
+    <dimen name="list_item_height">56dp</dimen>
+    <dimen name="list_item_height_msg">80dp</dimen>
+    <dimen name="list_item_msg_text_size">14sp</dimen>
+    <dimen name="list_item_select_height">50dp</dimen>
+    <dimen name="list_item_time_text_size">12sp</dimen>
+    <dimen name="list_message_height">150dp</dimen>
+    <dimen name="list_message_margin_bottom">34dp</dimen>
+    <dimen name="list_message_margin_start">8dp</dimen>
+    <dimen name="log_item_offset">3dp</dimen>
+    <dimen name="main_tab_text_size">10sp</dimen>
+    <dimen name="main_tabbar_height">32dp</dimen>
+    <dimen name="main_tabbar_width">160dp</dimen>
+    <dimen name="medium_text_size">14sp</dimen>
+    <dimen name="msg_list_icon_height">48dp</dimen>
+    <dimen name="msg_list_icon_width">48dp</dimen>
+    <dimen name="normal_text_size">16sp</dimen>
+    <dimen name="permission_dialog_btn_padding">8dp</dimen>
+    <dimen name="permission_dialog_btn_text_size">16sp</dimen>
+    <dimen name="permission_dialog_corners">8dp</dimen>
+    <dimen name="permission_dialog_margin">30dp</dimen>
+    <dimen name="permission_dialog_message_text_size">16sp</dimen>
+    <dimen name="permission_dialog_title_padding">15dp</dimen>
+    <dimen name="permission_dialog_title_text_size">22sp</dimen>
+    <dimen name="popup_item_margin_end">16dp</dimen>
+    <dimen name="popup_item_margin_start">16dp</dimen>
+    <dimen name="qr_head_border_size">4dp</dimen>
+    <dimen name="reference_corner_radius">4dp</dimen>
+    <dimen name="rtmp_state_shape_size">7dp</dimen>
+    <dimen name="search_edittext_height">28dp</dimen>
+    <dimen name="shadow_gap_elevation">2dp</dimen>
+    <dimen name="shadow_gap_margin_fill">6dp</dimen>
+    <dimen name="side_bar_height">456dp</dimen>
+    <dimen name="small_size_height">90dp</dimen>
+    <dimen name="small_size_margin_x">14dp</dimen>
+    <dimen name="small_size_margin_y">16dp</dimen>
+    <dimen name="small_size_width">160dp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="speaker_mic_icon_height">40dp</dimen>
+    <dimen name="speaker_mic_icon_width">40dp</dimen>
+    <dimen name="tab_div_height">1dp</dimen>
+    <dimen name="tab_height">60dp</dimen>
+    <dimen name="title_text_size">18sp</dimen>
+    <dimen name="toolbar_icon_height">36dp</dimen>
+    <dimen name="toolbar_icon_width">36dp</dimen>
+    <dimen name="toolbar_width">56dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="vertical_toolbar_icon_first_and_last_margin_top">15dp</dimen>
+    <dimen name="vertical_toolbar_icon_margin_top">15dp</dimen>
+    <dimen name="vertical_toolbar_margin_end">12dp</dimen>
+    <dimen name="workspace_icon_height">36dp</dimen>
+    <dimen name="workspace_icon_width">36dp</dimen>
+    <dimen name="workspace_toolbar_icon_margin_top">24dp</dimen>
+    <dimen name="workspace_width">77dp</dimen>
+    <drawable name="default_pressed">#100F0000</drawable>
+    <drawable name="transparent">#00FFFFFF</drawable>
+    <fraction name="dialog_min_width_major">70%</fraction>
+    <fraction name="dialog_min_width_minor">90%</fraction>
+    <item name="auto_listen_stereo_vision" type="id"/>
+    <item name="imageId" type="id"/>
+    <item name="ps_help_back" type="id"/>
+    <item name="ps_help_current" type="id"/>
+    <item name="ps_help_definition" type="id"/>
+    <item name="ps_help_fullscreen" type="id"/>
+    <item name="ps_help_progress" type="id"/>
+    <item name="ps_help_seekbar" type="id"/>
+    <item name="ps_help_start" type="id"/>
+    <item name="ps_help_start2" type="id"/>
+    <item name="ps_help_title" type="id"/>
+    <item name="ps_help_total" type="id"/>
+    <item name="ps_videoview" type="id"/>
+    <item name="qrcode_camera_preview" type="id"/>
+    <item name="right_controller" type="id"/>
+    <item name="right_controller_placeholder" type="id"/>
+    <item name="tag_created" type="id"/>
+    <item name="video_flag" type="id"/>
+    <item name="visible_flag" type="id"/>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <integer name="default_underline_indicator_fade_delay">300</integer>
+    <integer name="default_underline_indicator_fade_length">400</integer>
+    <string name="AR_workspace_get_super_power">AR工作空间，获得超能力</string>
+    <string name="Done">完成</string>
+    <string name="Login">登录</string>
+    <string name="No_friends">暂无好友</string>
+    <string name="P1080">超清</string>
+    <string name="P360">标清</string>
+    <string name="P720">高清</string>
+    <string name="Search">搜索</string>
+    <string name="about">关于</string>
+    <string name="add">添加</string>
+    <string name="add_marker_failed">添加失败</string>
+    <string name="add_members">添加成员</string>
+    <string name="address_book">通讯录</string>
+    <string name="address_book_all_contacts">全部联系人</string>
+    <string name="address_book_organization">组织架构</string>
+    <string name="advanced_setting">高级设置</string>
+    <string name="advice_feedback">反馈</string>
+    <string name="advice_feedback_content">向作者发送电子邮件</string>
+    <string name="alert_open_camera_body">建议限制高清视频路数在4路以下，以免视频质量下降。是否确认开启？</string>
+    <string name="alert_open_camera_title">注意</string>
+    <string name="app_is_background">应用进入后台</string>
+    <string name="app_is_first_open">正在打开应用</string>
+    <string name="app_is_foreground">应用回到前台</string>
+    <string name="app_manual">使用手册</string>
+    <string name="app_name">HiLeiaPS</string>
+    <string name="apply_for_account">申请帐号</string>
+    <string name="auto_start_tip_coolpad">设置方法：酷管家 -> 软件管理 -> 自启动管理 -> 打开 %s 的开关 。</string>
+    <string name="auto_start_tip_default">设置方法：请到 安全中心 - 权限管理 的 自启动管理 中，勾选 %s。</string>
+    <string name="auto_start_tip_huawei">设置方法：手机管家 -> 应用启动管理 -> 关闭自动管理 %s 并打开各允许启动开关。</string>
+    <string name="auto_start_tip_lenovo">设置方法：安全中心 -> 权限管理 -> 自启动 -> 打开 %s 的开关 。</string>
+    <string name="auto_start_tip_letv">设置方法：管家 -> 安全隐私 -> 自启动管理 -> 打开 %s 的开关 。</string>
+    <string name="auto_start_tip_meizu">设置方法：手机管家 -> 权限管理 -> 后台管理 -> 找到 %s -> 保持后台运行 。</string>
+    <string name="auto_start_tip_oppo">设置方法：手机管家 -> 权限隐私 -> 管理自启动应用 -> 允许 %s 自启动 。</string>
+    <string name="auto_start_tip_samsung_cn">设置方法：智能管理器 -> 自动运行应用程序 -> 打开 %s 的开关 。</string>
+    <string name="auto_start_tip_smartisan">设置方法：设置 -> 安全中心 -> 应用程序权限管理 -> 自启动权限管理 -> %s -> 允许被系统启动 。</string>
+    <string name="auto_start_tip_vivo">设置方法：i 管家 -> 应用管理 -> 权限管理 -> 自启动 -> 打开 %s 对应的开关 。</string>
+    <string name="auto_start_tip_xiaomi">设置方法：安全中心 -> 授权管理 -> 自启动管理 -> 打开 %s 的开关 。</string>
+    <string name="auto_start_tip_zte">设置方法：掌心管家 -> 自启动管理 -> 打开 %s 的开关 。</string>
+    <string name="back_camera">后置相机</string>
+    <string name="before_reason_permission">为了保证程序正常工作，请您同意以下权限申请</string>
+    <string name="board_message_close_camera">%1$s 关闭了摄像头</string>
+    <string name="board_message_close_freeze">%1$s 关闭了冻屏</string>
+    <string name="board_message_close_mark">%1$s 关闭了实时标注</string>
+    <string name="board_message_close_mic">%1$s 关闭了麦克风</string>
+    <string name="board_message_close_screensharing">%1$s 关闭了屏幕共享</string>
+    <string name="board_message_close_slam">%1$s 关闭了AR标注</string>
+    <string name="board_message_close_speaker">%1$s 关闭了扬声器</string>
+    <string name="board_message_close_whiteboard">%1$s 关闭了演示白板</string>
+    <string name="board_message_myself">我</string>
+    <string name="board_message_open_camera">%1$s 打开了摄像头</string>
+    <string name="board_message_open_freeze">%1$s 发起了冻屏</string>
+    <string name="board_message_open_mark">%1$s 发起了实时标注</string>
+    <string name="board_message_open_mic">%1$s 打开了麦克风</string>
+    <string name="board_message_open_screensharing">%1$s 发起了屏幕共享</string>
+    <string name="board_message_open_slam">%1$s 发起了AR标注</string>
+    <string name="board_message_open_speaker">%1$s 打开了扬声器</string>
+    <string name="board_message_open_whiteboard">%1$s 发起了演示白板</string>
+    <string name="board_message_receive_failed">[%1$s] 接收失败</string>
+    <string name="board_message_receive_success">[%1$s] 接收成功</string>
+    <string name="board_message_receiving_file">[%1$s] 接收中</string>
+    <string name="board_message_send_failed">%1$s 发送:[%2$s] 失败</string>
+    <string name="board_message_send_success">%1$s 发送:[%2$s] 成功</string>
+    <string name="board_message_sending_file">%1$s 发送:[%2$s] 中</string>
+    <string name="board_message_user_join">%1$s 加入了会议</string>
+    <string name="board_message_user_leave">%1$s 离开了会议</string>
+    <string name="bretha_back_continue">返回继续</string>
+    <string name="bretha_begin_record">开始录制</string>
+    <string name="bretha_continue_record">继续录制</string>
+    <string name="bretha_delete_video">删除视频</string>
+    <string name="bretha_end_record">结束录制</string>
+    <string name="bretha_end_record_and_upload">结束并自动上传</string>
+    <string name="bretha_lase_step">上一步</string>
+    <string name="bretha_last_page">上一页</string>
+    <string name="bretha_mark_record">标记</string>
+    <string name="bretha_next_page">下一页</string>
+    <string name="bretha_pause_record">暂停录制</string>
+    <string name="bretha_text_mark">文本标记</string>
+    <string name="button_allow">允许</string>
+    <string name="button_deny">拒绝</string>
+    <string name="call_answer">接听</string>
+    <string name="call_hangup">挂断</string>
+    <string name="camera">Camera</string>
+    <string name="camera_busy">相机尚未就绪,请稍后再试</string>
+    <string name="cancel">取消</string>
+    <string name="cancel_check_all">取消全选</string>
+    <string name="captcha_overdue">验证码过期,请重新请求</string>
+    <string name="check_all">全选</string>
+    <string name="check_update">检查更新</string>
+    <string name="check_update_failed">检查更新失败</string>
+    <string name="choose">选取</string>
+    <string name="choose_number_n">选择第%d项</string>
+    <string name="choose_number_x">选择第X项</string>
+    <string name="close_board">关闭白板</string>
+    <string name="close_camera">关闭相机</string>
+    <string name="close_camera_1">关闭摄像机</string>
+    <string name="close_freeze">关闭冻屏标注</string>
+    <string name="close_help">关闭窗口</string>
+    <string name="close_microphone">关闭麦克风</string>
+    <string name="close_real_annotation">关闭空间打点</string>
+    <string name="close_screen_share">关闭屏幕共享</string>
+    <string name="close_slam_annotation">关闭AR空间标注</string>
+    <string name="close_speaker">关闭扬声器</string>
+    <string name="code">短信验证码</string>
+    <string name="command_back">返回</string>
+    <string name="command_close_hi_mode">退出Hi模式</string>
+    <string name="command_confirm">确定</string>
+    <string name="command_help">全局命令词</string>
+    <string name="command_hide_number">隐藏序号</string>
+    <string name="command_light_down">调低亮度</string>
+    <string name="command_light_up">调高亮度</string>
+    <string name="command_open_hi_mode">打开Hi模式</string>
+    <string name="command_show_number">显示序号</string>
+    <string name="command_volume_down">调低音量</string>
+    <string name="command_volume_up">调高音量</string>
+    <string name="commit_success">提交成功</string>
+    <string name="company_name">亮风台</string>
+    <string name="conference_message_lost">会话信息丢失！</string>
+    <string name="confirm">确认</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="connection_broken">连接断开</string>
+    <string name="connection_failed">连接失败</string>
+    <string name="contact_acquisition_failed">联系人获取失败</string>
+    <string name="contact_details">用户详情</string>
+    <string name="contact_empty">暂无联系人数据</string>
+    <string name="contact_loading">联系人加载中…</string>
+    <string name="contacts">联系人</string>
+    <string name="continue_recording">继续</string>
+    <string name="create_group">发起群聊</string>
+    <string name="crop_image">裁剪</string>
+    <string name="current_version">当前版本</string>
+    <string name="custom_access_background_location">后台访问位置信息</string>
+    <string name="custom_body_sensor_background">后台访问身体传感器</string>
+    <string name="custom_manage_external_storage">所有文件访问权限</string>
+    <string name="custom_post_notification">通知</string>
+    <string name="custom_request_install_packages">安装未知应用</string>
+    <string name="custom_system_alert_window">显示在其他应用的上层</string>
+    <string name="custom_write_settings">修改系统设置</string>
+    <string name="delete">删除</string>
+    <string name="delete_loading">正在删除视频中…</string>
+    <string name="delete_success">删除成功！</string>
+    <string name="device_connect_failed">访问设备失败！</string>
+    <string name="dialog_bottom_import_from_local">从本地导入</string>
+    <string name="dialog_control_camera">摄像头切换</string>
+    <string name="dialog_control_flashlight_close">关闭</string>
+    <string name="dialog_control_flashlight_open">开启</string>
+    <string name="dialog_control_glass_label">眼镜端远程控制</string>
+    <string name="dialog_control_hangup">挂断</string>
+    <string name="dialog_select_device">选择视频源</string>
+    <string name="discover_new_version">发现新版本</string>
+    <string name="dlg_content_low_storage">存储空间不足,无法进行记录！</string>
+    <string name="dlg_content_near_low_storage">%d分钟后结束视频录制</string>
+    <string name="dlg_title_low_storage">内存不足</string>
+    <string name="dlg_title_quit_recording">录像中,要退出吗?</string>
+    <string name="done">完成</string>
+    <string name="dot">...</string>
+    <string name="download_fail">下载失败</string>
+    <string name="download_success">下载成功</string>
+    <string name="downloading">正在下载…</string>
+    <string name="email_hint">您的 email</string>
+    <string name="empty_data">没有数据</string>
+    <string name="end_and_save">停止并保存</string>
+    <string name="end_of_recording">停止录像</string>
+    <string name="enter_setting">去设置</string>
+    <string name="exception_account_is_existed">已经分配了其他账户</string>
+    <string name="exception_activity_is_finishing">开始页面不存在…</string>
+    <string name="exception_conference_is_existed">已分配在其他会议中</string>
+    <string name="exception_members_all_other_conference">呼叫成员全在其他会议中</string>
+    <string name="exception_members_error_state">呼叫成员状态异常</string>
+    <string name="exception_members_is_empty">呼叫成员返回null</string>
+    <string name="exception_message_account_not_null">帐号不能为空</string>
+    <string name="exception_message_account_tips">会话资源不足，请联系系统管理员【%d】</string>
+    <string name="exception_message_add_member_talking">对应忙碌中或已离线，请稍后【%d】</string>
+    <string name="exception_message_add_members">呼叫方添加成员时出错：%1$s</string>
+    <string name="exception_message_add_members_talking">%s等%d位用户忙碌中或已离线，请稍后</string>
+    <string name="exception_message_apply_account">申请通话账户时出错：%1$s</string>
+    <string name="exception_message_apply_conference">呼叫方申请会议时出错：%1$s</string>
+    <string name="exception_message_background_permission">当前应用处于后台,并且没有后台权限！</string>
+    <string name="exception_message_call_im_connection_failed">进行视频通话呼叫时IM未连接</string>
+    <string name="exception_message_callee__permission_hangup">来电未接，原因：缺少必需的系统权限。</string>
+    <string name="exception_message_callee_conference_lost">被呼叫方来电等待时会议ID丢失</string>
+    <string name="exception_message_callee_hangup">被呼叫方挂断来电</string>
+    <string name="exception_message_callee_timeout">被呼叫方等待超时</string>
+    <string name="exception_message_caller__permission_hangup">呼叫取消，原因：缺少必需的系统权限。</string>
+    <string name="exception_message_caller_hangup">呼叫方主动挂断呼叫</string>
+    <string name="exception_message_check_network">网络连接不可用，请检查你的网络设置【%d】</string>
+    <string name="exception_message_conference_fewer_member">会议中成员少于2人</string>
+    <string name="exception_message_conference_finish">对方取消呼叫</string>
+    <string name="exception_message_conference_lost_coming">来电的视频通话结束</string>
+    <string name="exception_message_conference_members_empty">进行音视频呼叫时，呼叫成员列表为空</string>
+    <string name="exception_message_conference_state_error">当前用户状态异常</string>
+    <string name="exception_message_content_not_null">请填写您所遇到的问题</string>
+    <string name="exception_message_enter_conference">加入会议时出错：%1$s</string>
+    <string name="exception_message_hangup">主动挂断通话</string>
+    <string name="exception_message_id_not_found">未找到会议Id</string>
+    <string name="exception_message_id_not_null">请填写您的email</string>
+    <string name="exception_message_im_connection_failed">IM连接失败</string>
+    <string name="exception_message_im_login_fail">HiLeia账户登录失败</string>
+    <string name="exception_message_imserver_error">IM服务器登录失败</string>
+    <string name="exception_message_join_hangup">加入会议时挂断通话</string>
+    <string name="exception_message_join_timeout">加入会议超时</string>
+    <string name="exception_message_member_refused">对方拒绝接听</string>
+    <string name="exception_message_member_system_error">对方接听时系统异常</string>
+    <string name="exception_message_member_timeout">对方接听超时</string>
+    <string name="exception_message_no_connection">当前网络不可用，请连接网络后重试</string>
+    <string name="exception_message_no_connection_click_retry">当前网络不可用，请连接网络后点击重试</string>
+    <string name="exception_message_other_device_calling">另外终端使用相同账号在通话。</string>
+    <string name="exception_message_password_count_legal">密码不能小于六位</string>
+    <string name="exception_message_password_not_null">密码不能为空</string>
+    <string name="exception_message_phone_count_legal">手机号必须为11位</string>
+    <string name="exception_message_phone_illegal">手机号码不合法</string>
+    <string name="exception_message_phone_lost">手机号丢失，请重新输入</string>
+    <string name="exception_message_phone_not_null">手机号不能为空</string>
+    <string name="exception_message_phone_or_password_incorrect">用户名或密码错误</string>
+    <string name="exception_message_server_error">服务器访问失败</string>
+    <string name="exception_message_session_close">视频通话关闭：%d</string>
+    <string name="exception_message_username_count_legal">用户名不能小于4大于20位</string>
+    <string name="exception_message_username_lost">用户名丢失，请返回重新输入</string>
+    <string name="exception_message_username_not_null">用户名不能为空</string>
+    <string name="exception_message_verification_code_invalid">验证码失效，请返回重新获取</string>
+    <string name="exception_message_wait_member_time_out">呼叫方等待超时</string>
+    <string name="exception_message_waiting_conference">等待进入会议时出错:%1$s</string>
+    <string name="exception_message_waiting_members">等待成员加入会议时：%1$s</string>
+    <string name="exception_message_zip_failed">日志文件压缩异常</string>
+    <string name="exception_sdk_pause_state">HiLeiaPS处于暂停状态</string>
+    <string name="exit">退出登录</string>
+    <string name="exit_app">确定退出应用?</string>
+    <string name="exit_the_group_chat">退出群聊</string>
+    <string name="external_contacts">外部联系人</string>
+    <string name="external_contacts_input">输入外部联系人手机号码</string>
+    <string name="feedback_commit_loading">正在发送…</string>
+    <string name="feedback_commit_null">请输入反馈内容</string>
+    <string name="feedback_contact_way_tips">请输入您的手机号或邮箱</string>
+    <string name="feedback_content_tips">请输入0-300字内容</string>
+    <string name="feedback_hint">请描述您所遇到的问题</string>
+    <string name="file_all">全部文件</string>
+    <string name="file_normal">常用文件</string>
+    <string name="file_not_exist">源文件在SD卡上不存在</string>
+    <string name="focus_failed">对焦失败</string>
+    <string name="focus_not_supported">当前Camera不支持对焦</string>
+    <string name="focus_successed">对焦成功</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="forward_settings">您需要去应用程序设置当中手动开启权限</string>
+    <string name="front_camera">前置相机</string>
+    <string name="get_code">获取验证码</string>
+    <string name="get_img_code">获取图形码</string>
+    <string name="glass_job_back">返回</string>
+    <string name="glass_job_kn_index">第%d项</string>
+    <string name="good">好的</string>
+    <string name="group_members">群成员</string>
+    <string name="group_name_empty_hint">群组名称不能为空</string>
+    <string name="hangup">结束通话</string>
+    <string name="head_portrait">头像</string>
+    <string name="help_info">帮助信息</string>
+    <string name="hiar_voice_register_allow" ns1:ignore="ExtraTranslation,MissingTranslation">hiar_voice_register_allow</string>
+    <string name="hiar_voice_register_ignore" ns1:ignore="MissingTranslation">hiar.voice.register.ignore</string>
+    <string name="image_illegal">不是合法的图片文件，请重新选择图片</string>
+    <string name="image_unexist">图片不存在或已被删除</string>
+    <string name="immediate_open">立即开启</string>
+    <string name="immediately_call">立即呼叫</string>
+    <string name="input_limit">输入不能超过250个字符！</string>
+    <string name="input_title">输入标题</string>
+    <string name="invite_failed">邀请失败</string>
+    <string name="invite_success">邀请成功</string>
+    <string name="io_shut_down">IO中断，请稍后重试</string>
+    <string name="is_not_calling">当前用户不在通话中,无法进行截图！</string>
+    <string name="join_meeting">正在加入会议中…</string>
+    <string name="keep_call">检测呼叫中</string>
+    <string name="kickout_failed">移除失败</string>
+    <string name="kickout_members">移除成员</string>
+    <string name="kickout_success">移除成功</string>
+    <string name="label_account">帐号</string>
+    <string name="label_already_latest_version">当前已是最新版本</string>
+    <string name="label_audio_permission_refuse_hint">录音权限申请失败,退出会议</string>
+    <string name="label_auto_answer_delay">%1$d 秒后自动加入…</string>
+    <string name="label_auto_logging">登录中…</string>
+    <string name="label_autostart">自动启动管理</string>
+    <string name="label_back">返回上一层</string>
+    <string name="label_back_to_app">回到应用</string>
+    <string name="label_back_to_talking">回到通话中</string>
+    <string name="label_backcamera">后置摄像头</string>
+    <string name="label_backstage">%1$s应用转换到后台运行</string>
+    <string name="label_backstage_call">后台来电</string>
+    <string name="label_backstage_warning">后台运行会造成高耗电，并且会15分钟亮屏一次，是否允许？</string>
+    <string name="label_battery_low_hint">系统电量较低，请及时接入充电线</string>
+    <string name="label_beyond_numberofcalls">超出多人通话人数限制</string>
+    <string name="label_birthday">生日</string>
+    <string name="label_call">通话</string>
+    <string name="label_call_cancelled">已取消</string>
+    <string name="label_call_other_cancelled">对方已取消</string>
+    <string name="label_call_other_rejected">对方已拒绝</string>
+    <string name="label_call_other_unanswered">对方未接听</string>
+    <string name="label_call_qrcode">扫码呼我</string>
+    <string name="label_call_qrcode_description">扫码呼叫：可打印贴于机器设备或者邮件签名</string>
+    <string name="label_call_rejected">已拒绝</string>
+    <string name="label_call_time">通话时长%1$s</string>
+    <string name="label_call_unanswered">未接听</string>
+    <string name="label_camera_hint">相机运行中…请关闭后重试!</string>
+    <string name="label_camera_permission_refuse_hint">相机权限申请失败,退出会议</string>
+    <string name="label_cancel_screenshare">屏幕共享取消</string>
+    <string name="label_chat_detail">详情</string>
+    <string name="label_check_update_failed">检查更新失败</string>
+    <string name="label_checking_for_update">检查更新中</string>
+    <string name="label_clear_operation_failed">清除操作失败</string>
+    <string name="label_close_camera_failed">相机关闭失败</string>
+    <string name="label_close_camera_success">相机关闭成功</string>
+    <string name="label_close_mic_failed">麦克风关闭失败</string>
+    <string name="label_close_mic_success">麦克风关闭成功</string>
+    <string name="label_close_speaker_failed">扬声器关闭失败</string>
+    <string name="label_close_speaker_success">扬声器关闭成功</string>
+    <string name="label_collaboration">多人协作</string>
+    <string name="label_coming_call">你有新的来电</string>
+    <string name="label_common_autostart_description">为了避免来电和消息没有提示，请到“手机管家”>“权限隐私”>“自启动管理”>“DECRESS”>打开“开机自启动、后台自启动”。\n\n如上设置后应用在后台运行不会对您的设备产生任何影响，既不会耗电也不会耗流量。</string>
+    <string name="label_common_notification_description">为了避免来电和消息没有提示，请到手机“设置”>“应用管理”>“DECRESS”>“通知管理”>打开“允许通知”、“在锁屏上显示”、“在屏幕顶部显示”、“在桌面上显示角标”、点击“消息”，打开“允许通知”、“振动”、“优先打扰”。</string>
+    <string name="label_company">公司</string>
+    <string name="label_copy_success">复制成功</string>
+    <string name="label_copyright">5G技术应用研究所</string>
+    <string name="label_copyright1">有问题请咨询:</string>
+    <string name="label_copyright2">028-87834267</string>
+    <string name="label_copyright3">东方电气集团科学技术研究院</string>
+    <string name="label_current_version">当前版本</string>
+    <string name="label_department">所在部门</string>
+    <string name="label_discover_new_version">发现新版本</string>
+    <string name="label_district">地区</string>
+    <string name="label_done_record">生产线更新巡逻内容</string>
+    <string name="label_download_url_error">下载路径不合法</string>
+    <string name="label_downloading_update_file">开始下载更新文件</string>
+    <string name="label_edit">编辑头像</string>
+    <string name="label_email">邮箱</string>
+    <string name="label_error_hint">仅支持控制加入房间的眼镜端</string>
+    <string name="label_error_screenshare">屏幕共享出错</string>
+    <string name="label_file_size_limited_hint">所选文件大小不能超过50M</string>
+    <string name="label_filemanager_empty">没有文件</string>
+    <string name="label_float_permission_dialog_cancel">暂不开启</string>
+    <string name="label_float_permission_dialog_confirm">现在去开启</string>
+    <string name="label_float_permission_dialog_title">提示</string>
+    <string name="label_float_permission_hint">您的手机没有授予悬浮窗权限，请开启后再试</string>
+    <string name="label_floatwindow">后台弹出界面</string>
+    <string name="label_focus_operation_failed">聚焦操作失败</string>
+    <string name="label_force_update">此版本为强制更新版本，不更新无法使用。</string>
+    <string name="label_freeze_operation_failed">冻屏操作失败</string>
+    <string name="label_front_camera_slam_warning">前置相机不支持空间标注！</string>
+    <string name="label_frontcamera">前置摄像头</string>
+    <string name="label_get_group_info_failed">获取群组信息失败</string>
+    <string name="label_group_chat">群聊(%1$s)</string>
+    <string name="label_help">使用帮助</string>
+    <string name="label_hint">温馨提醒</string>
+    <string name="label_huawei_autostart_description">为了避免来电和消息没有提示，请到“手机管家”>“自动启动管理”>允许 DECRESS 自启动。\n\nDECRESS完美支持华为推送。如上设置后应用在后台运行不会对您的设备产生任何影响，既不会耗电也不会耗流量。</string>
+    <string name="label_huawei_notification_description">为了避免来电和消息没有提示，请到手机“设置”>“应用管理”>“DECRESS”>“通知”>打开“允许通知”、“优先显示”、“状态栏”、“横幅”、“锁屏”。</string>
+    <string name="label_input_server_address">请输入服务器地址</string>
+    <string name="label_input_server_port">请输入端口</string>
+    <string name="label_is_update_now">现在是否更新？</string>
+    <string name="label_limits_mic_hint">麦克风数量超过限制，打开麦克风失败</string>
+    <string name="label_limits_video_hint">相机数量超过限制，打开相机失败</string>
+    <string name="label_livepush">直播监控</string>
+    <string name="label_login_pwd_input">请输入密码</string>
+    <string name="label_login_qrcode">登录二维码</string>
+    <string name="label_login_qrcode_description">扫描二维码，登录眼镜端</string>
+    <string name="label_logout">退出登录</string>
+    <string name="label_mark_operation_failed">实时标注操作失败</string>
+    <string name="label_member_count">共%1$s人</string>
+    <string name="label_message_before_yesterday">前天</string>
+    <string name="label_message_friday">星期五</string>
+    <string name="label_message_monday">星期一</string>
+    <string name="label_message_saturday">星期六</string>
+    <string name="label_message_sunday">星期日</string>
+    <string name="label_message_thursday">星期四</string>
+    <string name="label_message_tuesday">星期二</string>
+    <string name="label_message_wednesday">星期三</string>
+    <string name="label_message_yesterday">昨天</string>
+    <string name="label_miui_float_permission_hint">您的手机没有授予悬浮窗权限和后台弹出界面权限，请开启后再试</string>
+    <string name="label_my_document">我的文件</string>
+    <string name="label_name">姓名</string>
+    <string name="label_name_rule">命名规则:\n1、由汉字、数字、字母、空格组成\n2、长度4-16个字符，一个汉字为两个字符。</string>
+    <string name="label_need_fullscreen_video_warning">没有全屏显示的视频画面</string>
+    <string name="label_net_error">网络连接不可用！</string>
+    <string name="label_network_reconnecting">由于网络错误，正在重连…</string>
+    <string name="label_network_unavailable">当前没有连接网络,请连接网络后重试</string>
+    <string name="label_notification">通知管理</string>
+    <string name="label_offline">离线</string>
+    <string name="label_open_camera_failed">相机打开失败</string>
+    <string name="label_open_camera_success">相机打开成功</string>
+    <string name="label_open_mic_failed">麦克风打开失败</string>
+    <string name="label_open_mic_success">麦克风打开成功</string>
+    <string name="label_open_speaker_failed">扬声器打开失败</string>
+    <string name="label_open_speaker_success">扬声器打开成功</string>
+    <string name="label_oppo_autostart_description">为了避免来电和消息没有提示，请到“手机管家”>“权限隐私”>“自启动管理”>“DECRESS”>打开“开机自启动、后台自启动”。\n\nDECRESS完美支持OPPO推送。如上设置后应用在后台运行不会对您的设备产生任何影响，既不会耗电也不会耗流量。</string>
+    <string name="label_oppo_notification_description">为了避免来电和消息没有提示，请到手机“设置”>“应用管理”>“DECRESS”>“通知管理”>打开“允许通知”、“在锁屏上显示”、“在屏幕顶部显示”、“在桌面上显示角标”、点击“消息”，打开“允许通知”、“振动”、“优先打扰”。</string>
+    <string name="label_phone">手机号码</string>
+    <string name="label_position">职位</string>
+    <string name="label_protocol_of_usage">《使用协议》</string>
+    <string name="label_quit">退出应用</string>
+    <string name="label_quit_group_hint">退出后不再接受此群消息</string>
+    <string name="label_received_file">收到的文件</string>
+    <string name="label_remote_control_hint">%1$s 已关闭摄像头</string>
+    <string name="label_remote_control_operation_failed">远程控制操作失败</string>
+    <string name="label_remote_endcall">远程挂断 %1$s 电话</string>
+    <string name="label_remote_switchcamera">远程控制 %1$s 切换摄像头</string>
+    <string name="label_remote_switchflashlight">远程控制 %1$s 闪光灯</string>
+    <string name="label_request_error">网络请求错误</string>
+    <string name="label_restore_server_config">恢复默认配置</string>
+    <string name="label_retry">重新加载</string>
+    <string name="label_retry_fresh_hint">加载失败，点击重试</string>
+    <string name="label_revoke_operation_failed">撤销操作失败</string>
+    <string name="label_save_album">保存到相册</string>
+    <string name="label_save_failed">保存头像失败</string>
+    <string name="label_save_file_failed">文件保存失败</string>
+    <string name="label_save_file_success">文件保存成功</string>
+    <string name="label_save_pic_to">图片已保存到</string>
+    <string name="label_save_server_config">保存配置</string>
+    <string name="label_screencapture">屏幕共享</string>
+    <string name="label_screensharing">屏幕共享中</string>
+    <string name="label_screensharing_hint">正在屏幕共享中…请关闭后再重试!</string>
+    <string name="label_screensharing_operation_failed">屏幕共享操作失败</string>
+    <string name="label_search_no_result">无搜索结果</string>
+    <string name="label_select_file">选择文件</string>
+    <string name="label_sex">性别</string>
+    <string name="label_slam_clear_operation_failed">AR标注清除操作失败</string>
+    <string name="label_slam_operation_failed">AR标注操作失败</string>
+    <string name="label_slam_revoke_operation_failed">AR标注撤销操作失败</string>
+    <string name="label_slam_tab_base">通用标识</string>
+    <string name="label_slam_tab_power">电力标识</string>
+    <string name="label_slam_text_hint">点击输入文字</string>
+    <string name="label_start_screenshare">开始屏幕共享</string>
+    <string name="label_stop_screenshare">停止屏幕共享</string>
+    <string name="label_sure">确认</string>
+    <string name="label_tel">电话</string>
+    <string name="label_top_directory_hint">已经在根目录了</string>
+    <string name="label_transfer_host_notify">当前模式主持人离线，你为新主持人</string>
+    <string name="label_update_failed">更新失败</string>
+    <string name="label_update_later">稍后更新</string>
+    <string name="label_update_name_hint">用户名不符合命名规则</string>
+    <string name="label_update_now">立即更新</string>
+    <string name="label_usbcamera">USB Camera</string>
+    <string name="label_version">最新版本: </string>
+    <string name="label_version_clash_hint">客户端版本不一致，请升级到最新版本</string>
+    <string name="label_voip_me">我</string>
+    <string name="label_whiteboard_operation_failed">白板操作失败</string>
+    <string name="label_xiaomi_autostart_description">为了避免来电和消息没有提示，请到手机“设置”>“授权管理”>“自动启动管理”>允许 DECRESS 自启动。\n\nDECRESS完美支持小米推送。如上设置后应用在后台运行不会对您的设备产生任何影响，既不会耗电也不会耗流量。</string>
+    <string name="label_xiaomi_float_description">为了避免来电和消息没有提示，请到手机“设置”>“授权管理”>”应用权限管理“>“DECRESS”>允许“锁屏显示”、“后台弹出界面”。</string>
+    <string name="label_xiaomi_notification_description">为了避免来电和消息没有提示，请到手机“设置”>“应用管理”>“DECRESS”>“通知管理”>打开“允许通知”、“桌面图标角标”、通过过滤规则全部设为重要，点击“消息”，打开“允许通知”、“悬浮通知”、“锁屏通知”、“通知铃声”、“振动”、“呼吸灯闪烁”。</string>
+    <string name="label_zoom_operation_failed">变焦操作失败</string>
+    <string name="lable_group_name">群聊名称</string>
+    <string name="latest_version_label">您已是最新版本</string>
+    <string name="layout_dialog_loading">正在加载…</string>
+    <string name="legal_notices">法律声明</string>
+    <string name="less_memory">内存不足</string>
+    <string name="less_memory_notice">内存提示</string>
+    <string name="less_than_400">当前内存不足400MB，无法录制</string>
+    <string name="less_than_500">当前内存不足500MB</string>
+    <string name="loginBtnTrans">loginBtnTrans</string>
+    <string name="loginRegisterTrans">loginRegisterTrans</string>
+    <string name="loginTextInputTrans">loginTextInputTrans</string>
+    <string name="login_account_input">手机号/邮箱/用户名</string>
+    <string name="login_conflict">您的帐号已在其他设备上登录</string>
+    <string name="login_out_failed">登出失败…</string>
+    <string name="login_out_loading">正在登出…</string>
+    <string name="login_out_msg">确定退出登录?</string>
+    <string name="login_out_title">退出登录</string>
+    <string name="login_phone_input">请输入手机号</string>
+    <string name="login_pwd_find">忘记密码</string>
+    <string name="login_pwd_input">密码</string>
+    <string name="logout">注销</string>
+    <string name="logout_tip">确定要注销吗？</string>
+    <string name="logouting">正在注销</string>
+    <string name="lost_running_activity">丢失了活跃的Activity</string>
+    <string name="mark">标记</string>
+    <string name="mark_success">标记成功！</string>
+    <string name="me">个人资料</string>
+    <string name="memory_low">当前视频已保存\n当前内存不足200MB，无法继续录制</string>
+    <string name="message_background_failed">还未允许【后台弹出页面】和【悬浮窗】权限，功能不能正常使用 </string>
+    <string name="message_notify_failed">还未允许【通知】权限，功能不能正常使用 </string>
+    <string name="message_overlay_failed">还未允许【悬浮窗】权限，功能不能正常使用 </string>
+    <string name="message_reconnect">网络断开，正在尝试重连…</string>
+    <string name="message_send">短信已发出,请注意查收</string>
+    <string name="modifing">正在修改…</string>
+    <string name="modify_success">修改成功</string>
+    <string name="more">更多</string>
+    <string name="move_slowly">缓慢移动，探索环境…</string>
+    <string name="msg">消息</string>
+    <string name="msg_empty">暂无聊天记录</string>
+    <string name="msg_module">消息模块</string>
+    <string name="need_bind_before_start">请先bind账户</string>
+    <string name="need_init_before_start">还未调用init函数</string>
+    <string name="net_error">网络连接不可用</string>
+    <string name="network_connect_fail">网络连接错误，请检查网络</string>
+    <string name="network_connect_success">连接网络成功</string>
+    <string name="network_disconnect">网络连接断开</string>
+    <string name="network_is_not_available">网络连接不可用</string>
+    <string name="network_no_route">无法连接远程地址与端口，请检查网络</string>
+    <string name="network_socket_error">socket连接超时，请检查网络</string>
+    <string name="network_ssl_out">证书出错，请检查SSL库</string>
+    <string name="network_time_out">网络连接超时，请检查网络</string>
+    <string name="network_unknown">网络请求失败，请检查网络</string>
+    <string name="network_unknown_host">域名解析失败,请检查网络</string>
+    <string name="new_message_chat_page">新增消息聊天页面</string>
+    <string name="new_table">新增工作台</string>
+    <string name="new_ui">全新UI</string>
+    <string name="new_ui_and_experience">全新界面，全新体验</string>
+    <string name="nickname">昵称</string>
+    <string name="no_category">暂无分类</string>
+    <string name="no_category_list">未找到分类信息!</string>
+    <string name="no_device">未搜索到可用USB Camera设备</string>
+    <string name="no_tag">暂无文本标签</string>
+    <string name="no_url">No mUrl</string>
+    <string name="no_video">没有视频记录！</string>
+    <string name="no_video_source">当前设备未找到视频源！</string>
+    <string name="not_available">sd卡不可用</string>
+    <string name="not_available_app_to_view_file">没有应用可以打开此文件</string>
+    <string name="not_in_calling">不在通话状态中！</string>
+    <string name="not_record_state">非录制状态！</string>
+    <string name="not_selected_hint">您还未选择联系人</string>
+    <string name="num_indicator_text">%1$d/%2$d</string>
+    <string name="number">个</string>
+    <string name="offline_toast">对方可能不在线</string>
+    <string name="ok">确定</string>
+    <string name="online">Online</string>
+    <string name="open_camera">打开相机</string>
+    <string name="open_camera_1">打开摄像机</string>
+    <string name="open_in_browser">在浏览器中打开</string>
+    <string name="open_microphone">打开麦克风</string>
+    <string name="open_speaker">打开扬声器</string>
+    <string name="organization_empty">暂无联系人数据</string>
+    <string name="password">密码</string>
+    <string name="permission_authorization_failed">授权失败</string>
+    <string name="permission_authorization_success">授权成功</string>
+    <string name="permission_denied">申请相关权限被拒绝</string>
+    <string name="permission_dialog_message">为了您能正常使用，需要以下权限</string>
+    <string name="permission_dialog_title">权限申请</string>
+    <string name="permission_never_ask_again">相关权限禁止无法再使用应用</string>
+    <string name="permission_never_ask_again_sany">相关权限禁止无法再使用应用</string>
+    <string name="permission_rationale">应用需要开启相关权限</string>
+    <string name="permission_setting_guide">在设置-应用-DECRESS-权限中开启相机和麦克风权限，以正常使用推流及通话功能</string>
+    <string name="permissionx_access_background_location">后台访问位置信息</string>
+    <string name="permissionx_body_sensor_background">后台访问身体传感器</string>
+    <string name="permissionx_manage_external_storage">所有文件访问权限</string>
+    <string name="permissionx_post_notification">通知</string>
+    <string name="permissionx_request_install_packages">安装未知应用</string>
+    <string name="permissionx_system_alert_window">显示在其他应用的上层</string>
+    <string name="permissionx_write_settings">修改系统设置</string>
+    <string name="personal_information">个人信息</string>
+    <string name="phone_number">手机号</string>
+    <string name="phone_number_has_been_registered">手机号已被注册</string>
+    <string name="pick_pic_error">请选择图片文件！</string>
+    <string name="please_input_tile">请输入标题！</string>
+    <string name="port_format_error">端口格式不正确</string>
+    <string name="prepare_download">准备下载</string>
+    <string name="press_back_again_to_exit">再按一次退出</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="profile_load_failed">头像加载失败</string>
+    <string name="progress">进度</string>
+    <string name="progress_num">%</string>
+    <string name="ps_init_check_param">检查OnGoing接口结束</string>
+    <string name="ps_init_param">通话结束，参数恢复初始化</string>
+    <string name="ps_init_start_param">start初始化成功</string>
+    <string name="ps_init_stop_param">stop释放结束</string>
+    <string name="ps_receive_incoming">收到了来电消息，后台权限:%s</string>
+    <string name="ps_screen_off">手机关闭了屏幕</string>
+    <string name="ps_screen_on">手机开屏了</string>
+    <string name="ps_start_function">SDK调用start:%s</string>
+    <string name="ps_user_present">手机屏幕解锁了</string>
+    <string name="pwdFindToBack">pwdFindToBack</string>
+    <string name="pwd_find_get_code_loading">正在获取验证码…</string>
+    <string name="pwd_find_loading">正在设置新密码…</string>
+    <string name="pwd_find_verify_code_loading">正在校验验证码…</string>
+    <string name="pwd_find_verify_code_success">校验验证码成功</string>
+    <string name="quick_mark">快速标记</string>
+    <string name="re_get_code">重新获取验证码</string>
+    <string name="receive_notification">接收消息推送</string>
+    <string name="receive_notification_summary">开启也没用，这功能压根没做</string>
+    <string name="receiving">收取中…</string>
+    <string name="record_count_mark">%d个标记点</string>
+    <string name="record_count_number">%d个</string>
+    <string name="record_detail">记录详情</string>
+    <string name="record_dir_lost">无法获取录制目录！</string>
+    <string name="record_list">记录列表</string>
+    <string name="recording">正在录制中！</string>
+    <string name="refresh">刷新</string>
+    <string name="regain_code">重新获取</string>
+    <string name="register">立即注册</string>
+    <string name="register_btn">注册</string>
+    <string name="register_label">欢迎来到%1$s,请立即注册</string>
+    <string name="register_label_first">已发送至</string>
+    <string name="register_label_second">请输入验证码</string>
+    <string name="register_part1">注册即表示同意</string>
+    <string name="register_part2">服务协议</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_title">%1$s,你好！</string>
+    <string name="request_reason_cancel">取消</string>
+    <string name="request_reason_ok">我已明白</string>
+    <string name="request_reason_permission">即将重新申请的权限是程序必须依赖的权限</string>
+    <string name="requesting_connection">正在连接…</string>
+    <string name="requesting_reconnection">重连中…</string>
+    <string name="reset_pwd_success">重置密码成功</string>
+    <string name="rt_open_background_running">开启后台运行权限</string>
+    <string name="rt_open_power_saving">设置省电模式自启动权限</string>
+    <string name="rt_open_quick_settings_failed_tip">暂不支持您手机的快速跳转，请自行进行设置</string>
+    <string name="rt_power_save_dialog_description">在省电模式下，%s 的运行仍然可能受到限制。使用%s时应尽量使得电量处于相对充足的状态，并且关闭省电模式。相关设置入口一般在状态栏或者电池相关设置。</string>
+    <string name="rt_power_save_dialog_title">您已开启省电模式</string>
+    <string name="rt_power_save_settings_description">在省电模式下允许 %s 在后台持续运行。</string>
+    <string name="rtc_permission_cancel_text">取消</string>
+    <string name="rtc_permission_deny_text">应用需要您授予相应的权限才能获得粗略位置信息，请您在设置->应用->权限中开启定位权限。</string>
+    <string name="rtc_permission_setting_text">设置权限</string>
+    <string name="rtc_permission_sure_text">确定</string>
+    <string name="save">保存</string>
+    <string name="save_graffiti_content_hint">确定保存涂鸦内容吗?</string>
+    <string name="save_to_album">录像文件将会保存在相册中</string>
+    <string name="scan_external_device">已接入外源摄像头</string>
+    <string name="scan_failed">扫描失败了，换个地方或视角重新扫描吧</string>
+    <string name="scan_success">扫描成功</string>
+    <string name="scene_map">场景地图</string>
+    <string name="sdcard_space_not_enough">手机存储空间不足，请清理手机后使用</string>
+    <string name="sdk_calling">正在通话中…</string>
+    <string name="sdk_is_running">SDK正在运行中！</string>
+    <string name="select">请选择USB摄像头</string>
+    <string name="select_contacts">选择联系人</string>
+    <string name="select_from_album">从手机相册选择</string>
+    <string name="selected_count_confirm">确定(%1$s)</string>
+    <string name="selected_count_out">超出通话人数限制</string>
+    <string name="send">发送</string>
+    <string name="sendVerifyCode">sendVerifyCode</string>
+    <string name="send_feedback">发送反馈</string>
+    <string name="send_feedback_commit">提交</string>
+    <string name="send_feedback_contact_way">您的联系方式</string>
+    <string name="send_feedback_success">谢谢您的反馈</string>
+    <string name="send_feedback_txt">我们收到反馈将及时优化改进</string>
+    <string name="send_file">发送文件</string>
+    <string name="send_message">发消息</string>
+    <string name="send_success">发送成功</string>
+    <string name="server_address_empty_hint">服务器地址不能为空</string>
+    <string name="server_setting">服务器配置</string>
+    <string name="service_running">服务正在运行中…</string>
+    <string name="set_new_pwd">设置新密码</string>
+    <string name="setting">立即设置</string>
+    <string name="setting_auto_answer">自动接听</string>
+    <string name="setting_backstage">后台运行</string>
+    <string name="setting_call">通话设置</string>
+    <string name="setting_camera">开启相机</string>
+    <string name="setting_cbr">固定码率</string>
+    <string name="setting_content_not_null">内容不能为空</string>
+    <string name="setting_debug_mode">开发者模式</string>
+    <string name="setting_fps">帧率</string>
+    <string name="setting_fullscreen">默认全屏</string>
+    <string name="setting_hardware_decode">硬件解码</string>
+    <string name="setting_hardware_encode">硬件编码</string>
+    <string name="setting_max_bps">最大码率(单位:kbps)</string>
+    <string name="setting_mic">开启麦克风</string>
+    <string name="setting_min_bps">最小码率(单位:kbps)</string>
+    <string name="setting_notice">通知</string>
+    <string name="setting_resolution">视频分辨率</string>
+    <string name="setting_retouch">美颜</string>
+    <string name="setting_smallwindow">视频小窗口</string>
+    <string name="setting_smallwindow_summery">小窗口显示当前全屏视频源</string>
+    <string name="setting_speaker">开启扬声器</string>
+    <string name="setting_summery">通话中默认开启</string>
+    <string name="setting_support_a922">支持A922摄像头</string>
+    <string name="setting_support_usb">支持USB摄像头</string>
+    <string name="setting_theme">主题</string>
+    <string name="setting_theme_dark">夜间模式</string>
+    <string name="setting_transferMode">传输模式(开启为TCP,关闭为UDP)</string>
+    <string name="setting_voip">视频设置</string>
+    <string name="setting_voip_param">视频参数设置</string>
+    <string name="share">分享</string>
+    <string name="skip">跳过</string>
+    <string name="slam_guide_init">慢慢移动你的眼镜，扫描环境中…</string>
+    <string name="slam_guide_reset">场景丢失，请回到初始位置…</string>
+    <string name="slam_init_failed">初始化失败</string>
+    <string name="slam_unsupported">不支持该设备</string>
+    <string name="start_board">开始白板</string>
+    <string name="start_freeze">开始冻屏标注</string>
+    <string name="start_real_annotation">开始空间打点</string>
+    <string name="start_screen_share">开始屏幕共享</string>
+    <string name="start_slam_annotation">开始AR空间标注</string>
+    <string name="suggestion_feedback">问题反馈</string>
+    <string name="tab_all">全部</string>
+    <string name="take_picture">拍照</string>
+    <string name="temporarily_no_data">暂未数据…</string>
+    <string name="text_mark">文本标记：%1$s</string>
+    <string name="text_meeting_incalling">%1$s 发起的多人协作正在进行中</string>
+    <string name="text_too_long">发送文本过长</string>
+    <string name="the_new_version_updates_content">新版本%1$s更新内容</string>
+    <string name="time">时间</string>
+    <string name="time_left_before_stop_recording">Only %d minutes left </string>
+    <string name="tip_reconnect_fail">网络重连失败，请检查网络后重新登录</string>
+    <string name="tips">提示</string>
+    <string name="tips_normal_mode">当前模式无法开启小窗口</string>
+    <string name="tips_not_wifi">You are currently using the mobile network, the player will continue to consume traffic</string>
+    <string name="tips_not_wifi_cancel">Stop play</string>
+    <string name="tips_not_wifi_confirm">Resume</string>
+    <string name="title">title</string>
+    <string name="title_chat_detail">聊天信息</string>
+    <string name="title_dialog">提示：</string>
+    <string name="title_edit">编辑资料</string>
+    <string name="title_fps">设置帧率</string>
+    <string name="title_max_bps">设置最大码率</string>
+    <string name="title_min_bps">设置最小码率</string>
+    <string name="toast_message">Toast message</string>
+    <string name="toast_tips_slam_start">空间标注会加速耗电，无需使用请关闭！</string>
+    <string name="token_expired">Token过期，请重新登录</string>
+    <string name="transmission_quality">传输画质</string>
+    <string name="txt_welcome">一种更高效的工作方式</string>
+    <string name="unconnected">未连接</string>
+    <string name="unit_s">秒</string>
+    <string name="update">更新</string>
+    <string name="update_profile_failed">更新头像失败</string>
+    <string name="update_profile_loading">正在更新头像…</string>
+    <string name="update_profile_successed">更新头像成功</string>
+    <string name="update_the_content">更新内容</string>
+    <string name="updating_wait">新版本正在下载,请稍等</string>
+    <string name="upload_complete">上传完成！</string>
+    <string name="upload_history">历史上传</string>
+    <string name="uploading">正在上传</string>
+    <string name="usb_camera">USB 相机</string>
+    <string name="usb_camera_unavailable">USB 相机不可用</string>
+    <string name="usb_open_failed">请重新插拔USB设备</string>
+    <string name="use_agreement">服务协议及隐私政策</string>
+    <string name="use_agreement_title">服务协议</string>
+    <string name="user_lost">用户不存在</string>
+    <string name="user_name_me">我</string>
+    <string name="userid_is_null">userID or name is Null</string>
+    <string name="username">姓名</string>
+    <string name="username_input">请输入姓名</string>
+    <string name="usual_problem">常见问题</string>
+    <string name="verification_code_error">验证码错误</string>
+    <string name="verify_phone">验证手机号</string>
+    <string name="video_number_window">窗口</string>
+    <string name="video_quality_bad">当前网络状态不佳</string>
+    <string name="video_quality_worst">当前网络状态差</string>
+    <string name="video_record_end">录制成功！等待上传中…</string>
+    <string name="video_recording_error">视频录制发生错误，请重试</string>
+    <string name="voice_close_more">收起</string>
+    <string name="voice_index_choice">选</string>
+    <string name="voice_index_start">第</string>
+    <string name="voice_more">更多</string>
+    <string name="voice_more_title">更多语音指令</string>
+    <string name="voip_call">呼叫</string>
+    <string name="voip_call_cannot_call_yourself">自己无法呼叫自己</string>
+    <string name="voip_call_connecting">连接中…</string>
+    <string name="voip_call_enter_media_error">进入房间失败</string>
+    <string name="voip_call_invalid_token">您的登录已经过期，请重新登录后再试</string>
+    <string name="voip_call_inviting">正在呼叫</string>
+    <string name="voip_call_network_error">当前网络不可用，请检查你的网络设置</string>
+    <string name="voip_call_terminated">通话即将结束</string>
+    <string name="voip_call_timeout">通话超时</string>
+    <string name="voip_call_waiting">正在等待对方接听…</string>
+    <string name="voip_incall_answering">接听中…</string>
+    <string name="voip_incall_busy">对方忙</string>
+    <string name="voip_incall_leave">已离开</string>
+    <string name="voip_incall_lost_connect">已断线</string>
+    <string name="voip_incall_mediaerror">连接失败</string>
+    <string name="voip_incall_offline">不在线</string>
+    <string name="voip_incall_timeout">已超时</string>
+    <string name="voip_incall_waiting">连接中…</string>
+    <string name="voip_mt_busy">对方正忙</string>
+    <string name="voip_mt_offline">对方不在线</string>
+    <string name="voip_video_call_inviting">邀请你进行视频通话…</string>
+    <string name="workbench">工作台</string>
+    <string name="workbench_title">我的工作台</string>
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">48dip</item>
+        <item name="maxWidth">48dip</item>
+        <item name="minHeight">48dip</item>
+        <item name="maxHeight">48dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+    <style name="AVLoadingIndicatorView.Large">
+        <item name="minWidth">76dip</item>
+        <item name="maxWidth">76dip</item>
+        <item name="minHeight">76dip</item>
+        <item name="maxHeight">76dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+    <style name="AVLoadingIndicatorView.Small">
+        <item name="minWidth">24dip</item>
+        <item name="maxWidth">24dip</item>
+        <item name="minHeight">24dip</item>
+        <item name="maxHeight">24dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+    <style name="Animation" parent="@android:style/Animation.Dialog">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+    <style name="AnimationDialog" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom_out</item>
+    </style>
+    <style name="AppDialogDark" parent="BaseAppDialogDark"/>
+    <style name="AppDialogDark.Alert">
+        <item name="windowMinWidthMajor">@fraction/dialog_min_width_major</item>
+        <item name="windowMinWidthMinor">@fraction/dialog_min_width_minor</item>
+    </style>
+    <style name="AppDialogDark.Progress">
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppDialogLight" parent="BaseAppDialogLight"/>
+    <style name="AppDialogLight.Alert">
+        <item name="windowMinWidthMajor">@fraction/dialog_min_width_major</item>
+        <item name="windowMinWidthMinor">@fraction/dialog_min_width_minor</item>
+    </style>
+    <style name="AppSwitchCompat" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">?attr/switchCompatActivated</item>
+        <item name="colorSwitchThumbNormal">?attr/switchCompatThumbNormal</item>
+        <item name="android:colorForeground">?attr/switchCompatForeground</item>
+    </style>
+    <style name="AppTheme" parent="BaseAppThemeLight"/>
+    <style name="AppThemeDark" parent="BaseAppThemeDark"/>
+    <style name="AppThemeLaunch" parent="BaseAppThemeLight">
+        <item name="android:windowBackground">@color/color_primary</item>
+    </style>
+    <style name="AppWidget" parent="Theme.AppCompat.Light"/>
+    <style name="AppWidget.DeepLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+    <style name="AppWidget.DeepLine.Vertical">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="AppWidget.NavigationItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:drawablePadding">32dp</item>
+        <item name="android:textColor">?attr/navigationItemTextColor</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">?attr/selectableItemBackgroundGeneral</item>
+    </style>
+    <style name="AppWidget.NavigationItemBadge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="AppWidget.NavigationItemDeepLineGap" parent="AppWidget.DeepLine">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="BaseAppDialogDark" parent="Theme.AppCompat.Dialog">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:listDivider">@color/list_divider_dark</item>
+        <item name="widgetBackground">@color/selectable_item_background_general_normal_dark</item>
+        <item name="widgetBackgroundDark">@color/selectable_item_background_general_pressed_dark</item>
+        <item name="widgetBackgroundTitle">@color/color_primary</item>
+        <item name="selectableItemBackgroundGeneral">@drawable/selectable_item_background_general_dark</item>
+    </style>
+    <style name="BaseAppDialogLight" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:listDivider">@color/list_divider_light</item>
+        <item name="widgetBackground">@color/selectable_item_background_general_normal_light</item>
+        <item name="widgetBackgroundDark">@color/selectable_item_background_general_pressed_light</item>
+        <item name="widgetBackgroundTitle">@android:color/white</item>
+        <item name="selectableItemBackgroundGeneral">@drawable/selectable_item_background_general_light</item>
+    </style>
+    <style name="BaseAppThemeDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowBackground">@color/window_background_dark</item>
+        <item name="android:listDivider">@color/list_divider_dark</item>
+        <item name="widgetBackground">@color/selectable_item_background_general_normal_dark</item>
+        <item name="widgetBackgroundDark">@color/selectable_item_background_general_pressed_dark</item>
+        <item name="widgetBackgroundTitle">@color/color_primary</item>
+        <item name="selectableItemBackgroundGeneral">@drawable/selectable_item_background_general_dark</item>
+        <item name="navigationItemTextColor">@color/navigation_item_text_dark</item>
+        <item name="referenceText">@color/reference_text_dark</item>
+        <item name="referenceBackground">@drawable/reference_background_dark</item>
+        <item name="darkMode">true</item>
+        <item name="switchCompatActivated">@color/colorControlActivated_dark</item>
+        <item name="switchCompatThumbNormal">@color/colorSwitchThumbNormal_dark</item>
+        <item name="switchCompatForeground">@color/colorForeground_dark</item>
+    </style>
+    <style name="BaseAppThemeLight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:listDivider">@color/list_divider_light</item>
+        <item name="widgetBackground">@color/selectable_item_background_general_normal_light</item>
+        <item name="widgetBackgroundDark">@color/selectable_item_background_general_pressed_light</item>
+        <item name="widgetBackgroundTitle">@android:color/white</item>
+        <item name="selectableItemBackgroundGeneral">@drawable/selectable_item_background_general_light</item>
+        <item name="navigationItemTextColor">@color/navigation_item_text_light</item>
+        <item name="referenceText">@color/reference_text_light</item>
+        <item name="referenceBackground">@drawable/reference_background_light</item>
+        <item name="darkMode">false</item>
+        <item name="switchCompatActivated">@color/colorControlActivated_light</item>
+        <item name="switchCompatThumbNormal">@color/colorSwitchThumbNormal_light</item>
+        <item name="switchCompatForeground">@color/colorForeground_light</item>
+        <item name="android:windowTranslucentStatus">false</item>
+<!--        <item name="android:typeface">monospace</item>-->
+    </style>
+    <style name="BottomMenuDialog">
+        <item name="android:windowFullscreen">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/AnimationDialog</item>
+    </style>
+    <style name="ChooseContactDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="HedyDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">#0686f9</item>
+        <item name="android:windowBackground">@color/transparent_color</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/underline_unselected_color</item>
+        <item name="colorControlActivated">@color/underline_selected_color</item>
+    </style>
+    <style name="OnePixelActivityTheme" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoDisplay">false</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="PermissionXDefaultDialog" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Popupwindow">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <style name="RightControlButton">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:layout_width">@dimen/toolbar_icon_width</item>
+        <item name="android:layout_height">@dimen/toolbar_icon_height</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+    <style name="RightControlButton.Freeze">
+        <item name="android:background">@drawable/icon_capture_disable</item>
+    </style>
+    <style name="RightControlButton.Mark">
+        <item name="android:background">@drawable/icon_mark_disable</item>
+    </style>
+    <style name="RightControlButton.Slam">
+        <item name="android:background">@drawable/icon_slam_disable</item>
+    </style>
+    <style name="RightControlButton.Workbench">
+        <item name="android:background">@drawable/icon_workspace</item>
+    </style>
+    <style name="SwitchCompat.Control" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/blue_color</item>
+        <item name="colorSwitchThumbNormal">#e3e3e3</item>
+        <item name="android:colorForeground">@color/blue_color</item>
+    </style>
+    <style name="TranslucentTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimaryDark">#fff</item>
+    </style>
+    <style name="WarnTipDialog">
+        <item name="android:windowFullscreen">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="WinDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="checkboxStyle">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+    <style name="common_dialog_style" parent="@android:style/Theme.Dialog">
+        <!-- 无边框设置 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 是否没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景 -->
+        <item name="android:windowBackground">@color/transparent_color</item>
+        <!-- 是否背景模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--dialog遮罩透明度-->
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+    <style name="common_dialog_style2" parent="@android:style/Theme.Dialog">
+        <!-- 无边框设置 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 是否背景模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--dialog遮罩透明度-->
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>
+    <style name="divideLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divide_height_size</item>
+        <item name="android:background">@color/list_divider_light</item>
+    </style>
+    <style name="divideLineStyle.moreFragment">
+        <item name="android:layout_marginStart">46dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+    <style name="divideLineStyle.userinfoEdit">
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+    </style>
+    <style name="item_linear_displayName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxEms">10</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="linear_displayName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxEms">10</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="main_tab_radio_btn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:textColor">@drawable/main_tab_text_color_selector</item>
+        <item name="android:textSize">@dimen/extra_small_text_size</item>
+    </style>
+    <style name="moreFragmentTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">9dp</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:drawableEnd">@drawable/enter</item>
+    </style>
+    <style name="network_quality">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="popDialogTheme" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/Popupwindow</item>
+    </style>
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/animation_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/animation_popup_exit</item>
+    </style>
+    <style name="ps_popup_toast_anim" parent="@android:style/Animation">
+        <!--item name="android:windowEnterAnimation">@android:anim/fade_in</item-->
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <style name="ps_vertical_progressBar">
+        <item name="android:maxWidth">12dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/ps_volume_progress_bg</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:minWidth">1dp</item>
+    </style>
+    <style name="qrcode_tab_left_radio_btn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/qrcode_tab_left_button_background_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/qrcode_tab_text_color_selector</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:drawableTop">@drawable/qrcode_tab_indicator_selector</item>
+    </style>
+    <style name="qrcode_tab_right_radio_btn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/qrcode_tab_right_button_background_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/qrcode_tab_text_color_selector</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:drawableTop">@drawable/qrcode_tab_indicator_selector</item>
+    </style>
+    <style name="rtl_RecyclerTabLayout">
+        <item name="rtl_tabMinWidth">72dp</item>
+        <item name="rtl_tabMaxWidth">264dp</item>
+        <item name="rtl_tabIndicatorColor">?attr/colorAccent</item>
+        <item name="rtl_tabIndicatorHeight">2dp</item>
+        <item name="rtl_tabPaddingStart">12dp</item>
+        <item name="rtl_tabPaddingEnd">12dp</item>
+        <item name="rtl_tabBackground">?attr/selectableItemBackground</item>
+        <item name="rtl_tabTextAppearance">@style/rtl_RecyclerTabLayout.Tab</item>
+        <item name="rtl_tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+    <style name="rtl_RecyclerTabLayout.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="searchEditStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/search_edittext_height</item>
+        <item name="android:background">@drawable/selector_search_bg</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableStart">@drawable/ic_search_icon</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:textColorHint">@color/gray_color_level_5</item>
+        <item name="android:hint">@string/Search</item>
+    </style>
+    <style name="searchEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/search_edittext_height</item>
+        <item name="android:background">@drawable/selector_search_bg</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableStart">@drawable/icon_search_default</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:textColorHint">@color/gray_color_level_5</item>
+        <item name="android:hint">@string/Search</item>
+    </style>
+    <style name="setting_radio_btn_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@drawable/setting_resolution_text_color_selector</item>
+        <item name="android:drawableRight">@drawable/setting_resolution_radiobuttom_selector</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:paddingRight">25dp</item>
+    </style>
+    <style name="shadow_display">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxEms">10</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">#deffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="style_loading_dialog" parent="@android:style/Theme.Holo.Dialog">
+        <!-- 是否有边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--是否在悬浮Activity之上  -->
+        <item name="android:windowIsFloating">true</item>
+        <!--标题  -->
+        <item name="android:windowNoTitle">true</item>
+        <!--阴影  -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--透明背景-->
+        <item name="android:background">@android:color/transparent</item>
+        <!--窗口背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--弹窗背景是否变暗-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="style_permission_dialog">
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否显示title -->
+        <item name="android:windowNoTitle">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 设置dialog的背景：#00000000透明色 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景变灰：整个屏幕变灰，配合setCanceledOnTouchOutside(false) -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="userinfoEditContentTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:textColor">@color/black_color</item>
+    </style>
+    <style name="userinfoLLStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="userinfoLabelTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/gray_color_level_2</item>
+    </style>
+    <style name="voip_text_style_style" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr format="dimension" name="minWidth"/>
+        <attr format="dimension" name="maxWidth"/>
+        <attr format="dimension" name="minHeight"/>
+        <attr format="dimension" name="maxHeight"/>
+        <attr format="string" name="indicatorName"/>
+        <attr format="color" name="indicatorColor"/>
+    </declare-styleable>
+    <declare-styleable name="AspectRatioFrameLayout">
+        <attr name="resize_mode"/>
+    </declare-styleable>
+    <declare-styleable name="CallImageButton">
+        <attr name="disable_drawable"/>
+        <attr name="enable_drawable"/>
+        <attr name="running_drawable"/>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr format="dimension" name="civ_border_width"/>
+        <attr format="color" name="civ_border_color"/>
+        <attr format="boolean" name="civ_border_overlay"/>
+        <attr format="color" name="civ_fill_color"/>
+    </declare-styleable>
+    <declare-styleable name="CirclePageIndicator">
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered"/>
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr format="color" name="fillColor"/>
+        <!-- Color of the filled circles that represents pages. -->
+        <attr format="color" name="pageColor"/>
+        <!-- Orientation of the indicator. -->
+        <attr name="android:orientation"/>
+        <!-- Radius of the circles. This is also the spacing between circles. -->
+        <attr format="dimension" name="radius"/>
+        <!-- Whether or not the selected indicator snaps to the circles. -->
+        <attr format="boolean" name="snap"/>
+        <!-- Color of the open circles. -->
+        <attr format="color" name="strokeColor"/>
+        <!-- Width of the stroke used to draw the circles. -->
+        <attr name="strokeWidth"/>
+        <!-- View background -->
+        <attr name="android:background"/>
+    </declare-styleable>
+    <declare-styleable name="ClearEditText">
+        <attr format="enum" name="showType">
+            <enum name="text" value="0"/>
+            <enum name="phone" value="1"/>
+            <enum name="bankCardNo" value="2"/>
+            <enum name="IDCardNo" value="3"/>
+        </attr>
+        <attr format="string" name="textFormat"/>
+    </declare-styleable>
+    <declare-styleable name="FocusImageView">
+        <attr format="integer" name="focus_focusing_id"/>
+        <attr format="integer" name="focus_success_id"/>
+        <attr format="integer" name="focus_fail_id"/>
+    </declare-styleable>
+    <declare-styleable name="HiWebView">
+        <attr format="boolean" name="darkTheme"/>
+    </declare-styleable>
+    <declare-styleable name="HorizontalProgressBarWithNumber">
+        <attr format="color" name="progress_unreached_color"/>
+        <attr format="color" name="progress_reached_color"/>
+        <attr format="dimension" name="progress_reached_bar_height"/>
+        <attr format="dimension" name="progress_unreached_bar_height"/>
+        <attr format="dimension" name="progress_text_size"/>
+        <attr format="color" name="progress_text_color"/>
+        <attr format="dimension" name="progress_text_offset"/>
+        <attr format="enum" name="progress_text_visibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="LQRNineGridImageView">
+        <attr format="dimension" name="imgGap"/>
+    </declare-styleable>
+    <declare-styleable name="MyAlphaImageText">
+        <attr format="reference" name="imgBackground"/>
+        <attr format="string|reference" name="title"/>
+        <attr format="color|reference" name="titleTextColor"/>
+        <attr format="dimension" name="titleTextSize"/>
+        <attr format="dimension" name="imgWidth"/>
+        <attr format="dimension" name="imgHeight"/>
+        <attr format="dimension" name="imgPadding"/>
+    </declare-styleable>
+    <declare-styleable name="NiceImageView">
+        <attr format="boolean" name="is_circle"/>
+        <attr format="boolean" name="is_cover_src"/>
+        <attr format="dimension" name="corner_radius"/>
+        <attr format="dimension" name="corner_top_left_radius"/>
+        <attr format="dimension" name="corner_top_right_radius"/>
+        <attr format="dimension" name="corner_bottom_left_radius"/>
+        <attr format="dimension" name="corner_bottom_right_radius"/>
+        <attr format="dimension" name="border_width"/>
+        <attr format="color" name="border_color"/>
+        <attr format="dimension" name="inner_border_width"/>
+        <attr format="color" name="inner_border_color"/>
+        <attr format="color" name="mask_color"/>
+
+        <attr format="reference|float" name="text_size_ratio"/>
+        <attr format="reference|float" name="text_mask_ratio"/>
+        <attr format="reference|color" name="text_color"/>
+        <attr format="reference|boolean" name="is_show_border"/>
+        <attr format="reference|color" name="bg_color"/>
+    </declare-styleable>
+    <declare-styleable name="PadAvatarView">
+        <attr format="reference" name="src"/>
+    </declare-styleable>
+    <declare-styleable name="PasswordInputView">
+        <attr format="integer" name="pwv_maxLength"/>
+
+        <attr format="color" name="pwv_borderColor"/>
+        <attr format="color" name="pwv_pwdColor"/>
+        <attr format="color" name="pwv_haveInputBorderColor"/>
+
+        <attr format="dimension" name="pwv_strokeWidth"/>
+        <attr format="dimension" name="pwv_radius"/>
+        <attr format="dimension" name="pwv_spacing"/>
+        <attr format="string" name="pwv_asterisk"/>
+
+        <attr format="enum" name="pwv_borderStyle">
+            <enum name="box" value="0"/>
+            <enum name="line" value="1"/>
+        </attr>
+        <attr format="enum" name="pwv_pwdStyle">
+            <enum name="circle" value="0"/>
+            <enum name="asterisk" value="1"/>
+            <enum name="plaintext" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr format="boolean" name="matProg_progressIndeterminate"/>
+        <attr format="color" name="matProg_barColor"/>
+        <attr format="color" name="matProg_rimColor"/>
+        <attr format="dimension" name="matProg_rimWidth"/>
+        <attr format="float" name="matProg_spinSpeed"/>
+        <attr format="integer" name="matProg_barSpinCycleTime"/>
+        <attr format="dimension" name="matProg_circleRadius"/>
+        <attr format="boolean" name="matProg_fillRadius"/>
+        <attr format="dimension" name="matProg_barWidth"/>
+        <attr format="boolean" name="matProg_linearProgress"/>
+    </declare-styleable>
+    <declare-styleable name="QRCodeView">
+        <!-- 扫描框距离toolbar底部的距离，默认值为90dp -->
+        <attr format="dimension|reference" name="qrcv_topOffset"/>
+        <!-- 扫描框边角线的宽度，默认值为3dp -->
+        <attr format="dimension|reference" name="qrcv_cornerSize"/>
+        <!-- 扫描框边角线的长度，默认值为20dp -->
+        <attr format="dimension|reference" name="qrcv_cornerLength"/>
+        <!-- 扫描框边角线的颜色，默认值为@android:color/white -->
+        <attr format="color|reference" name="qrcv_cornerColor"/>
+        <!-- 扫描框边角线显示位置(相对于边框)，默认值为中间 -->
+        <attr name="qrcv_cornerDisplayType">
+            <enum name="center" value="1"/>
+            <enum name="inside" value="2"/>
+        </attr>
+        <!-- 扫描框的宽度，默认值为200dp -->
+        <attr format="dimension|reference" name="qrcv_rectWidth"/>
+        <!-- 条码扫样式描框的高度，默认值为140dp -->
+        <attr format="dimension|reference" name="qrcv_barcodeRectHeight"/>
+        <!-- 除去扫描框，其余部分阴影颜色，默认值为#33FFFFFF -->
+        <attr format="color|reference" name="qrcv_maskColor"/>
+        <!-- 扫描线的宽度，默认值为1dp -->
+        <attr format="dimension|reference" name="qrcv_scanLineSize"/>
+        <!-- 扫描线的颜色，默认值为@android:color/white -->
+        <attr format="color|reference" name="qrcv_scanLineColor"/>
+        <!-- 扫描线距离上下或者左右边框的间距，默认值为0dp -->
+        <attr format="dimension|reference" name="qrcv_scanLineMargin"/>
+        <!-- 是否显示默认的图片扫描线，默认值为false -->
+        <attr format="boolean" name="qrcv_isShowDefaultScanLineDrawable"/>
+        <!-- 扫描线的图片资源，默认值为null -->
+        <attr format="reference" name="qrcv_customScanLineDrawable"/>
+        <!-- 扫描边框的宽度，默认值为1dp -->
+        <attr format="dimension|reference" name="qrcv_borderSize"/>
+        <!-- 扫描边框的颜色，默认值为@android:color/white -->
+        <attr format="color|reference" name="qrcv_borderColor"/>
+        <!-- 扫描线从顶部移动到底部的动画时间，默认值为1000 -->
+        <attr format="integer" name="qrcv_animTime"/>
+        <!-- 扫描框中心点在屏幕垂直方向的比例，当设置此值时，会忽略 qrcv_topOffset -->
+        <attr format="float" name="qrcv_verticalBias"/>
+        <!-- Toolbar的高度，当有设置qrcv_isCenterVertical属性时，通过该属性来修正有Toolbar时导致扫描框垂直居中的偏差，默认值为0dp -->
+        <attr format="dimension|reference" name="qrcv_toolbarHeight"/>
+        <!-- 扫描框的样式是否为扫条形码样式，默认值为false -->
+        <attr format="boolean" name="qrcv_isBarcode"/>
+        <!-- 扫描二维码时的提示文案，默认值为null -->
+        <attr format="string|reference" name="qrcv_qrCodeTipText"/>
+        <!-- 扫描条码时的提示文案，默认值为null -->
+        <attr format="string|reference" name="qrcv_barCodeTipText"/>
+        <!-- 提示文案字体大小，默认值为14sp -->
+        <attr format="dimension|reference" name="qrcv_tipTextSize"/>
+        <!-- 提示文案颜色，默认值为@android:color/white -->
+        <attr format="color|reference" name="qrcv_tipTextColor"/>
+        <!-- 提示文案是否在扫描框的底部，默认值为false -->
+        <attr format="boolean" name="qrcv_isTipTextBelowRect"/>
+        <!-- 提示文案与扫描框之间的间距，默认值为20dp -->
+        <attr format="dimension|reference" name="qrcv_tipTextMargin"/>
+        <!-- 是否把提示文案作为单行显示，默认值为false -->
+        <attr format="boolean" name="qrcv_isShowTipTextAsSingleLine"/>
+        <!-- 是否显示提示文案的背景，默认值为false -->
+        <attr format="boolean" name="qrcv_isShowTipBackground"/>
+        <!-- 提示文案的背景色，默认值为#22000000 -->
+        <attr format="color|reference" name="qrcv_tipBackgroundColor"/>
+        <!-- 扫描线是否来回移动，默认值为true -->
+        <attr format="boolean" name="qrcv_isScanLineReverse"/>
+        <!-- 是否显示默认的网格图片扫描线，默认值为false -->
+        <attr format="boolean" name="qrcv_isShowDefaultGridScanLineDrawable"/>
+        <!-- 扫描线的网格图片资源，默认值为null -->
+        <attr format="reference" name="qrcv_customGridScanLineDrawable"/>
+        <!-- 是否只识别扫描框中的码，默认值为false -->
+        <attr format="boolean" name="qrcv_isOnlyDecodeScanBoxArea"/>
+        <!-- 是否显示定位点，默认值为false -->
+        <attr format="boolean" name="qrcv_isShowLocationPoint"/>
+        <!-- 码太小时是否自动缩放，默认值为false -->
+        <attr format="boolean" name="qrcv_isAutoZoom"/>
+    </declare-styleable>
+    <declare-styleable name="RecordButton">
+        <attr name="record_drawable"/>
+        <attr name="stop_drawable"/>
+    </declare-styleable>
+    <declare-styleable name="RoundProgressBarWidthNumber">
+        <attr format="dimension" name="round_radius"/>
+    </declare-styleable>
+    <declare-styleable name="StrokeTextView">
+        <attr format="color" name="stroke_color"/>
+    </declare-styleable>
+    <declare-styleable name="SwipeMenuLayout">
+        <attr format="boolean" name="swipeEnable"/>
+        <attr format="boolean" name="ios"/>
+        <attr format="boolean" name="leftSwipe"/>
+    </declare-styleable>
+    <declare-styleable name="UnderlinePageIndicator">
+        <!-- Whether or not the selected indicator fades. -->
+        <attr format="boolean" name="fades"/>
+        <!-- Length of the delay to fade the indicator. -->
+        <attr format="integer" name="fadeDelay"/>
+        <!-- Length of the indicator fade to transparent. -->
+        <attr format="integer" name="fadeLength"/>
+        <!-- Color of the selected line that represents the current page. -->
+        <attr name="selectedColor"/>
+        <!-- View background -->
+        <attr name="android:background"/>
+    </declare-styleable>
+    <declare-styleable name="ViewPagerIndicator">
+        <!-- Style of the circle indicator. -->
+        <attr format="reference" name="vpiCirclePageIndicatorStyle"/>
+        <!-- Style of the icon indicator's views. -->
+        <attr format="reference" name="vpiIconPageIndicatorStyle"/>
+        <!-- Style of the line indicator. -->
+        <attr format="reference" name="vpiLinePageIndicatorStyle"/>
+        <!-- Style of the title indicator. -->
+        <attr format="reference" name="vpiTitlePageIndicatorStyle"/>
+        <!-- Style of the tab indicator's tabs. -->
+        <attr format="reference" name="vpiTabPageIndicatorStyle"/>
+        <!-- Style of the underline indicator. -->
+        <attr format="reference" name="vpiUnderlinePageIndicatorStyle"/>
+    </declare-styleable>
+    <declare-styleable name="VoiceButton">
+        <attr format="string" name="lottie_text"/>
+        <attr format="reference" name="drawable_lottie_src"/>
+    </declare-styleable>
+    <declare-styleable name="VoiceImageView">
+        <attr format="boolean" name="hide_if_voice_disabled"/>
+        <attr format="reference" name="focus_reference"/>
+    </declare-styleable>
+    <declare-styleable name="contactSideBar">
+        <attr format="color|reference" name="textColor"/>
+        <attr format="color|reference" name="side_backgroundColor"/>
+        <attr format="color|reference" name="chooseTextColor"/>
+        <attr format="dimension" name="textSize"/>
+        <attr format="dimension" name="hintTextSize"/>
+        <attr format="dimension" name="item_radius"/>
+        <attr format="dimension" name="circleRadius"/>
+    </declare-styleable>
+    <declare-styleable name="rtl_RecyclerTabLayout">
+        <attr format="color" name="rtl_tabIndicatorColor"/>
+        <attr format="dimension" name="rtl_tabIndicatorHeight"/>
+
+        <attr format="reference" name="rtl_tabBackground"/>
+
+        <attr format="reference" name="rtl_tabTextAppearance"/>
+        <attr format="color" name="rtl_tabSelectedTextColor"/>
+
+        <attr format="integer" name="rtl_tabOnScreenLimit"/>
+        <attr format="dimension" name="rtl_tabMinWidth"/>
+        <attr format="dimension" name="rtl_tabMaxWidth"/>
+
+        <attr format="dimension" name="rtl_tabPaddingStart"/>
+        <attr format="dimension" name="rtl_tabPaddingTop"/>
+        <attr format="dimension" name="rtl_tabPaddingEnd"/>
+        <attr format="dimension" name="rtl_tabPaddingBottom"/>
+        <attr format="dimension" name="rtl_tabPadding"/>
+
+        <attr format="boolean" name="rtl_scrollEnabled"/>
+
+    </declare-styleable>
+</resources>

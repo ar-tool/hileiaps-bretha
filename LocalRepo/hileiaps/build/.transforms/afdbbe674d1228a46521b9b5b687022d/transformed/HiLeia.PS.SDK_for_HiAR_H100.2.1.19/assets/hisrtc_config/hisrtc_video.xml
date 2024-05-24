@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context>
+    <video>
+        <encoder>
+            <element name="VIDEO_PROFILE_360P"     width="640"   height="360"  fps="15" min_bitrate="300"  max_bitrate="900"   recommend_bitrate="600" />
+            <element name="VIDEO_PROFILE_360P_2"   width="640"   height="360"  fps="20" min_bitrate="400"  max_bitrate="1200"  recommend_bitrate="800" />
+            <element name="VIDEO_PROFILE_480P"     width="640"   height="480"  fps="15" min_bitrate="400"  max_bitrate="1200"  recommend_bitrate="800" />
+            <element name="VIDEO_PROFILE_480P_2"   width="640"   height="480"  fps="20" min_bitrate="600"  max_bitrate="1300"  recommend_bitrate="1200" />
+            <element name="VIDEO_PROFILE_720P"     width="1280"  height="720"  fps="15" min_bitrate="800"  max_bitrate="2400"  recommend_bitrate="1600" />
+            <element name="VIDEO_PROFILE_720P_2"   width="1280"  height="720"  fps="20" min_bitrate="1000" max_bitrate="3000"  recommend_bitrate="2000" />
+            <element name="VIDEO_PROFILE_1080P"    width="1920"  height="1080" fps="15" min_bitrate="1200" max_bitrate="3600"  recommend_bitrate="2400" />
+            <element name="VIDEO_PROFILE_1080P_2"  width="1920"  height="1080" fps="20" min_bitrate="1500" max_bitrate="4500"  recommend_bitrate="3000" />
+            <element name="VIDEO_PROFILE_2K"       width="2560"  height="1440" fps="15" min_bitrate="2400" max_bitrate="7200"  recommend_bitrate="4800" />
+            <element name="VIDEO_PROFILE_2K_2"     width="2560"  height="1440" fps="20" min_bitrate="3000" max_bitrate="9000"  recommend_bitrate="6000" />
+            <element name="VIDEO_PROFILE_4K"       width="4096"  height="2160" fps="15" min_bitrate="4800" max_bitrate="14400" recommend_bitrate="9600" />
+            <element name="VIDEO_PROFILE_4K_2"     width="4096"  height="2160" fps="20" min_bitrate="6000" max_bitrate="18000" recommend_bitrate="12000" />
+        </encoder>
+    </video>
+</context>

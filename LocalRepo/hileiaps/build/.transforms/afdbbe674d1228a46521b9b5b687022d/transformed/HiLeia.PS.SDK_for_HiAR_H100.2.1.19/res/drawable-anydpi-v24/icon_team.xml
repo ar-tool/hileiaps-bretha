@@ -1,0 +1,17 @@
+<vector xmlns:tools="http://schemas.android.com/tools"
+    android:autoMirrored="true" android:height="32dp"
+    android:viewportHeight="32" android:viewportWidth="32"
+    android:width="32dp" xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="VectorRaster">
+    <path android:fillAlpha="0.08" android:fillColor="#4B5966"
+        android:pathData="M28,0H4C1.8,0 0,1.8 0,4v24c0,2.2 1.8,4 4,4h24c2.2,0 4,-1.8 4,-4V4C32,1.8 30.2,0 28,0z" android:strokeAlpha="0.08"/>
+    <path android:pathData="M12.3,17.7c0,0.4 -0.3,0.7 -0.7,0.7H8.2c-0.4,0 -0.7,-0.3 -0.7,-0.7v-3.4c0,-0.4 0.3,-0.7 0.7,-0.7h3.5c0.4,0 0.7,0.3 0.7,0.7v1.3h2.8V9.5c0,-0.6 0.4,-1 1,-1.1l0.1,0h2.5V7.2c0,-0.4 0.3,-0.7 0.7,-0.7h3.5c0.4,0 0.7,0.3 0.7,0.7v3.4c0,0.4 -0.3,0.7 -0.7,0.7h-3.5c-0.4,0 -0.7,-0.3 -0.7,-0.7V9.3h-2.5c-0.1,0 -0.2,0.1 -0.3,0.2l0,0.1v6.1h2.8v-1.3c0,-0.4 0.3,-0.7 0.7,-0.7h3.5c0.4,0 0.7,0.3 0.7,0.7v3.4c0,0.4 -0.3,0.7 -0.7,0.7h-3.5c-0.4,0 -0.7,-0.3 -0.7,-0.7v-1.3h-2.8v6.1c0,0.1 0.1,0.2 0.2,0.3l0.1,0h2.5v-1.3c0,-0.4 0.3,-0.7 0.7,-0.7h3.5c0.4,0 0.7,0.3 0.7,0.7v3.4c0,0.4 -0.3,0.7 -0.7,0.7h-3.5c-0.4,0 -0.7,-0.3 -0.7,-0.7v-1.3h-2.5c-0.6,0 -1,-0.4 -1.1,-1l0,-0.1v-6.1h-2.8V17.7z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:endX="15.5" android:endY="25.265745"
+                android:startX="15.5" android:startY="6.4994454" android:type="linear">
+                <item android:color="#FF87BEFF" android:offset="0"/>
+                <item android:color="#FF1890FF" android:offset="0.9926"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

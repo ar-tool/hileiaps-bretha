@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_float_windows"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cl_incall_toolbar"
+        android:src="@drawable/float_show"/>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/cl_incall_toolbar"
+    android:layout_width="@dimen/toolbar_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_incall_toolbar"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed">
+
+    <com.hiscene.presentation.ui.widget.call.CallImageButton
+        android:id="@+id/btn_slam"
+        style="@style/RightControlButton"
+        app:disable_drawable="@drawable/icon_slam_disable"
+        app:enable_drawable="@drawable/icon_slam_enable"
+        app:running_drawable="@drawable/icon_slam_running"
+        android:layout_marginTop="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+        android:layout_marginBottom="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+        app:layout_constraintBottom_toTopOf="@+id/btn_mark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:ignore="ContentDescription" />
+
+    <com.hiscene.presentation.ui.widget.call.CallImageButton
+        android:id="@+id/btn_mark"
+        style="@style/RightControlButton"
+        app:disable_drawable="@drawable/icon_mark_disable"
+        app:enable_drawable="@drawable/icon_mark_enable"
+        app:running_drawable="@drawable/icon_mark_running"
+        android:layout_marginBottom="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+        app:layout_constraintBottom_toTopOf="@+id/btn_freeze"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_slam"
+        tools:ignore="ContentDescription" />
+
+    <com.hiscene.presentation.ui.widget.call.CallImageButton
+        android:id="@+id/btn_freeze"
+        style="@style/RightControlButton"
+        app:disable_drawable="@drawable/icon_capture_disable"
+        app:enable_drawable="@drawable/icon_capture_enable"
+        app:running_drawable="@drawable/icon_capture_running"
+        android:layout_marginBottom="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+        app:layout_constraintBottom_toTopOf="@+id/btn_workbench"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mark"
+        tools:ignore="ContentDescription" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_workbench"
+        android:layout_width="@dimen/toolbar_icon_width"
+        android:layout_height="@dimen/toolbar_icon_height"
+        android:layout_marginBottom="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+        android:background="@drawable/icon_workspace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_freeze"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:background="@drawable/shape_round_rect_comm">
+
+
+    <TextView
+        android:id="@+id/tv_choose_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_width="match_parent"
+        android:enabled="false"
+        android:layout_height="@dimen/dp_40"
+        android:textSize="@dimen/sp_14"
+        android:gravity="center"
+        android:hint="选择标题"
+        android:maxLength="250"
+        android:singleLine="true"
+        android:textColorHint="@color/color_blue"
+        android:textColor="@color/gray_color_level_5"
+        android:background="@drawable/shape_round_rect_tag" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        android:maxHeight="150dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_text_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_text_tags"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <com.hiscene.presentation.ui.widget.HiAlphaTextView
+            android:id="@+id/tag_dialog_cancel"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="取消"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tag_dialog_confirm"
+            android:background="@drawable/bg_round_4_f4f4f4"
+            android:textSize="16sp"/>
+
+        <com.hiscene.presentation.ui.widget.HiAlphaTextView
+            android:id="@+id/tag_dialog_confirm"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="1"
+            android:text="确认"
+            android:gravity="center"
+            android:background="@drawable/bg_round_4_blue"
+            android:layout_height="match_parent"
+            android:textColor="@color/white_color"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toEndOf="@+id/tag_dialog_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="16sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

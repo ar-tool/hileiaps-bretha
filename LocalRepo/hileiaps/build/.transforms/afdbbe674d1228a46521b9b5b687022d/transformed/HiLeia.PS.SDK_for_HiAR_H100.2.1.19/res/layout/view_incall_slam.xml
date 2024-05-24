@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hiscene.presentation.ui.widget.media.DragLayout
+        android:id="@+id/tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lay_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.hiscene.presentation.ui.widget.media.ExpandedMenu
+            android:id="@+id/expanded_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@id/cl_slam_left"
+            app:layout_constraintTop_toTopOf="@id/cl_slam_left" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_slam_left"
+            android:layout_width="@dimen/toolbar_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/vertical_toolbar_margin_end"
+            android:background="@drawable/bg_slam_top_bar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_slam_operation"
+                android:layout_width="@dimen/toolbar_icon_width"
+                android:layout_height="@dimen/toolbar_icon_height"
+                android:layout_marginTop="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+                android:layout_marginBottom="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+                android:background="@drawable/ic_slam_arrow_default"
+                app:layout_constraintBottom_toTopOf="@+id/btn_slam_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/arrow_hint"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_slam_arrow_hint"
+                app:layout_constraintBottom_toBottomOf="@id/btn_slam_operation"
+                app:layout_constraintStart_toEndOf="@id/btn_slam_operation"
+                app:layout_constraintTop_toTopOf="@id/btn_slam_operation" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_slam_text"
+                android:layout_width="@dimen/toolbar_icon_width"
+                android:layout_height="@dimen/toolbar_icon_height"
+                android:layout_marginBottom="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+                android:background="@drawable/ic_slam_text_default"
+                app:layout_constraintBottom_toTopOf="@+id/btn_slam_box"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_slam_operation"
+                tools:ignore="ContentDescription" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_slam_box"
+                android:layout_width="@dimen/toolbar_icon_width"
+                android:layout_height="@dimen/toolbar_icon_height"
+                android:layout_marginBottom="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+                android:background="@drawable/ic_slam_box_default"
+                app:layout_constraintBottom_toTopOf="@+id/btn_slam_picture"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_slam_text"
+                tools:ignore="ContentDescription" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_slam_picture"
+                android:layout_width="@dimen/toolbar_icon_width"
+                android:layout_height="@dimen/toolbar_icon_height"
+                android:layout_marginBottom="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+                android:background="@drawable/ic_slam_picture_default"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_slam_box"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+            android:id="@+id/btn_slam_fullscreen"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/vertical_toolbar_margin_end"
+            android:background="@null"
+            android:padding="16dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_slam_fullscreen_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_slam_right"
+            android:layout_width="@dimen/toolbar_width"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/vertical_toolbar_margin_end"
+            android:background="@drawable/bg_slam_top_bar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+                android:id="@+id/btn_slam_color"
+                android:layout_width="@dimen/toolbar_icon_width"
+                android:layout_height="@dimen/toolbar_icon_height"
+                android:layout_marginTop="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+                android:background="@drawable/icon_colouring_red"
+                app:layout_constraintBottom_toTopOf="@+id/btn_slam_revoke"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:ignore="ContentDescription" />
+
+            <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+                android:id="@+id/btn_slam_revoke"
+                android:layout_width="@dimen/toolbar_icon_width"
+                android:layout_height="@dimen/toolbar_icon_height"
+                android:layout_marginTop="@dimen/vertical_toolbar_icon_margin_top"
+                android:background="@drawable/ic_slam_revoke_default"
+                app:layout_constraintBottom_toTopOf="@+id/btn_slam_clear"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_slam_color"
+                tools:ignore="ContentDescription" />
+
+            <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+                android:id="@+id/btn_slam_clear"
+                android:layout_width="@dimen/toolbar_icon_width"
+                android:layout_height="@dimen/toolbar_icon_height"
+                android:layout_marginTop="@dimen/vertical_toolbar_icon_margin_top"
+                android:background="@drawable/icon_clear_default"
+                app:layout_constraintBottom_toTopOf="@+id/btn_slam_screenshot"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_slam_revoke"
+                tools:ignore="ContentDescription" />
+
+            <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+                android:id="@+id/btn_slam_screenshot"
+                android:layout_width="@dimen/toolbar_icon_width"
+                android:layout_height="@dimen/toolbar_icon_height"
+                android:layout_marginTop="@dimen/vertical_toolbar_icon_margin_top"
+                android:background="@drawable/ic_slam_screenshot_default"
+                app:layout_constraintBottom_toTopOf="@id/btn_slam_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_slam_clear"
+                app:layout_goneMarginBottom="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+                tools:ignore="ContentDescription" />
+
+            <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+                android:id="@+id/btn_slam_close"
+                android:layout_width="@dimen/toolbar_icon_width"
+                android:layout_height="@dimen/toolbar_icon_height"
+                android:layout_marginTop="@dimen/vertical_toolbar_icon_margin_top"
+                android:layout_marginBottom="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+                android:background="@drawable/icon_close_default"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_slam_screenshot"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include
+            layout="@layout/color_layout"
+            android:layout_width="@dimen/toolbar_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/vertical_toolbar_margin_end"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/cl_slam_right"
+            app:layout_constraintRight_toLeftOf="@id/cl_slam_right"
+            app:layout_constraintTop_toTopOf="@id/cl_slam_right" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lay_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/guide_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/guide_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_color"
+            android:layout_marginBottom="80dp"
+            android:text="@string/slam_guide_init"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+        <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+            android:id="@+id/btn_guide_close"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/icon_slam_initialization_close_default"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

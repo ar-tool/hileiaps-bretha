@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/shape_round_rect_comm">
+
+    <TextView
+        android:id="@+id/tv_low_mem_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dlg_content_low_storage"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray_color_level_5"
+        android:textSize="@dimen/normal_text_size"
+        android:gravity="center" />
+
+    <com.hiscene.presentation.ui.widget.HiAlphaTextView
+        android:id="@+id/tv_dialog_confirm"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/confirm"
+        android:gravity="center"
+        android:background="@drawable/bg_round_4_blue"
+        android:textColor="@color/white_color"
+        android:textSize="16sp"/>
+
+</LinearLayout>

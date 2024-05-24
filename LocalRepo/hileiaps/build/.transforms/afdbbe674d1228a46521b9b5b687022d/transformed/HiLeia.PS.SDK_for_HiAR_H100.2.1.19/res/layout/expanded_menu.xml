@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:visibility="invisible"
+    android:layout_width="152dp"
+    android:layout_height="47dp"
+    android:orientation="horizontal"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/ic_slam_toolbar_bg">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/arrow"
+        android:layout_width="@dimen/toolbar_icon_width"
+        android:layout_height="@dimen/toolbar_icon_height"
+        android:background="@drawable/ic_slam_arrow_default"
+        android:padding="5dp"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/circle"
+        android:layout_width="@dimen/toolbar_icon_width"
+        android:layout_height="@dimen/toolbar_icon_height"
+        android:background="@drawable/ic_slam_circle_default"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="5dp"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/brush"
+        android:layout_width="@dimen/toolbar_icon_width"
+        android:layout_height="@dimen/toolbar_icon_height"
+        android:background="@drawable/ic_slam_free_brush_default"
+        android:padding="5dp"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription" />
+</LinearLayout>
+

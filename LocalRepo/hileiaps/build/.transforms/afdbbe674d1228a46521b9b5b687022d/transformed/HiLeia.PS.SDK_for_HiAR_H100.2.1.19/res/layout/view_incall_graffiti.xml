@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--用于放置侧面的所有按钮-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_right_toolbar"
+        android:layout_width="@dimen/toolbar_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/vertical_toolbar_margin_end"
+        android:background="@drawable/bg_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+            android:id="@+id/btn_freeze_color"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_marginTop="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+            android:background="@drawable/icon_colouring_red"
+            app:layout_constraintBottom_toTopOf="@+id/btn_freeze_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:ignore="ContentDescription" />
+
+        <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+            android:id="@+id/btn_freeze_size"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_marginTop="@dimen/vertical_toolbar_icon_margin_top"
+            android:background="@drawable/icon_adjust_paint_size_default"
+            app:layout_constraintBottom_toTopOf="@+id/btn_remove"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_freeze_color"
+            tools:ignore="ContentDescription" />
+
+
+        <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+            android:id="@+id/btn_remove"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_marginTop="@dimen/vertical_toolbar_icon_margin_top"
+            android:background="@drawable/ic_slam_revoke_default"
+            app:layout_constraintBottom_toTopOf="@+id/btn_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_freeze_size"
+            tools:ignore="ContentDescription" />
+
+        <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_marginTop="@dimen/vertical_toolbar_icon_margin_top"
+            android:background="@drawable/icon_clear_default"
+            app:layout_constraintBottom_toTopOf="@+id/btn_free_graffiti"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_remove"
+            app:layout_goneMarginBottom="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+            tools:ignore="ContentDescription" />
+
+        <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+            android:id="@+id/btn_free_graffiti"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_marginTop="@dimen/vertical_toolbar_icon_margin_top"
+            android:layout_marginBottom="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+            android:background="@drawable/icon_close_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_delete"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_left_toolbar"
+        android:layout_width="@dimen/toolbar_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/vertical_toolbar_margin_end"
+        android:background="@drawable/bg_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+            android:id="@+id/btn_switch_scene"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_marginTop="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+            android:background="@drawable/icon_switch_scene"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:ignore="ContentDescription" />
+
+        <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+            android:id="@+id/btn_transfer_image"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_marginTop="@dimen/vertical_toolbar_icon_margin_top"
+            android:background="@drawable/icon_transfer_picture"
+            app:layout_constraintBottom_toTopOf="@+id/btn_save_roiview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_switch_scene"
+            tools:ignore="ContentDescription" />
+
+
+        <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+            android:id="@+id/btn_save_roiview"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_marginTop="@dimen/vertical_toolbar_icon_margin_top"
+            android:layout_marginBottom="@dimen/vertical_toolbar_icon_first_and_last_margin_top"
+            android:background="@drawable/icon_save_picture"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_transfer_image"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        layout="@layout/brush_size_layout"
+        android:visibility="gone"
+        android:layout_width="@dimen/toolbar_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/vertical_toolbar_margin_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cl_right_toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        layout="@layout/color_layout"
+        android:visibility="gone"
+        android:layout_width="@dimen/toolbar_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/vertical_toolbar_margin_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cl_right_toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

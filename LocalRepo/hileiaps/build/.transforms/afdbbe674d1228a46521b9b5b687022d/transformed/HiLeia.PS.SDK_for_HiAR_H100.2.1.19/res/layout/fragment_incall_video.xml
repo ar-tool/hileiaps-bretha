@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_incall_empty">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,16:9"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--用于放置全屏视频窗口-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fl_full_screen"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:cardBackgroundColor="#00000000"
+        app:layout_constraintDimensionRatio="w,16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/img_fullscreen_mic"
+            android:layout_width="@dimen/fullscreen_mic_icon_width"
+            android:layout_height="@dimen/fullscreen_mic_icon_height"
+            android:background="@drawable/ic_voice_bg"
+            android:src="@drawable/icon_voice"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txt_video_name"
+            style="@style/linear_displayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginBottom="13dp"
+            android:layout_marginStart="44dp"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/medium_text_size"
+            tools:text="王二小" />
+    </androidx.cardview.widget.CardView>
+
+    <!--用于放置头像窗口-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hiscene.publiclib.widget.LoggerRecyclerView
+        android:id="@+id/log_recycler_view"
+        android:layout_width="188dp"
+        android:layout_height="@dimen/list_message_height"
+        android:layout_marginStart="@dimen/list_message_margin_start"
+        android:layout_marginBottom="@dimen/list_message_margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fl_incall_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="@color/gray_color_level_11"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <!--用于放置底部的所有按钮-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_incall_actionbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+                android:id="@+id/btn_reverse_camera"
+                android:layout_width="@dimen/speaker_mic_icon_width"
+                android:layout_height="@dimen/speaker_mic_icon_height"
+                android:layout_marginEnd="@dimen/horizontal_toolbar_icon_margin_start"
+                android:visibility="gone"
+                android:src="@drawable/icon_camera_back"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_opencamera"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+                android:id="@+id/btn_opencamera"
+                android:layout_width="@dimen/speaker_mic_icon_width"
+                android:layout_height="@dimen/speaker_mic_icon_height"
+                android:layout_marginEnd="@dimen/horizontal_toolbar_icon_margin_start"
+                android:src="@drawable/icon_camera_disable"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_mic"
+                app:layout_constraintStart_toEndOf="@id/btn_reverse_camera"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+                android:id="@+id/btn_mic"
+                android:layout_width="@dimen/speaker_mic_icon_width"
+                android:layout_height="@dimen/speaker_mic_icon_height"
+                android:layout_marginEnd="@dimen/horizontal_toolbar_icon_margin_start"
+                android:src="@drawable/icon_microphone_disable"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_hangup"
+                app:layout_constraintStart_toEndOf="@id/btn_opencamera"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/close_microphone" />
+
+            <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+                android:id="@+id/btn_hangup"
+                android:layout_width="@dimen/hangup_icon_width"
+                android:layout_height="@dimen/hangup_icon_height"
+                android:src="@drawable/icon_call_hangup"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_speaker"
+                app:layout_constraintStart_toEndOf="@id/btn_mic"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/hangup" />
+
+            <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+                android:id="@+id/btn_speaker"
+                android:layout_width="@dimen/speaker_mic_icon_width"
+                android:layout_height="@dimen/speaker_mic_icon_height"
+                android:layout_marginStart="@dimen/horizontal_toolbar_icon_margin_start"
+                android:src="@drawable/icon_speaker_disable"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btn_hangup"
+                app:layout_constraintEnd_toStartOf="@id/btn_mute_all"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+
+            <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+                android:id="@+id/btn_mute_all"
+                android:layout_width="@dimen/speaker_mic_icon_width"
+                android:layout_height="@dimen/speaker_mic_icon_height"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/horizontal_toolbar_icon_margin_start"
+                android:src="@drawable/mute_all"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btn_speaker"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_device_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toast_frame"
+        android:gravity="center"
+        android:text="@string/scan_external_device"
+        android:textColor="@color/white_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fl_incall_actionbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txt_stop_screensharing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_stop_screenshare_button"
+        android:drawablePadding="10dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal|bottom"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="5dp"
+        android:text="@string/label_stop_screenshare"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ViewStub
+        android:id="@+id/ly_devices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout="@layout/layout_select_device"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--用于放置Slam标注窗口-->
+    <com.hiscene.presentation.ui.widget.media.SlamLayout
+        android:id="@+id/rl_slam"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintDimensionRatio="w,16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!--用于放置实时标注窗口-->
+    <com.hiscene.presentation.ui.widget.media.PointerLayout
+        android:id="@+id/rl_pointer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintDimensionRatio="w,16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!--用于放置涂鸦、白板和冻屏-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_graffiti_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/white_board_bg"
+        android:visibility="gone"
+        app:layout_constraintDimensionRatio="w,16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/img_receive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            tools:ignore="ContentDescription" />
+
+        <com.hiscene.presentation.ui.widget.media.GraffitiLayout
+            android:id="@+id/ly_graffiti"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

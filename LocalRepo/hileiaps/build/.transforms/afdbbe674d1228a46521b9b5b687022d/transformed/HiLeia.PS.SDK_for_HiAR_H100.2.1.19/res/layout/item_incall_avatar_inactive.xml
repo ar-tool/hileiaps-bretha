@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@drawable/bg_incall_avatar">
+
+    <com.hiscene.publiclib.widget.NiceImageView
+        android:id="@+id/img_avatar_inactive"
+        android:layout_width="@dimen/invite_icon_width"
+        android:layout_height="@dimen/invite_icon_height"
+        android:layout_marginStart="@dimen/incall_avatar_margin"
+        android:layout_marginTop="@dimen/incall_avatar_margin"
+        android:layout_marginEnd="@dimen/incall_avatar_margin"
+        android:layout_marginBottom="@dimen/incall_avatar_margin"
+        android:src="@drawable/ic_launcher_background"
+        app:corner_radius="@dimen/reference_corner_radius"
+        app:is_circle="true"
+        app:is_cover_src="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text_color="@color/avatar_text_color"
+        tools:ignore="contentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_incall_item_avatar_text_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="10"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:shadowColor="#ff000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/small_text_size"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/img_avatar_inactive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        tools:text="刘德华"
+        tools:textColor="@color/white_color" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_status_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#cc202024"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/inner_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/txt_status_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="10"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:shadowColor="#ff000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:textColor="@color/gray_color_level_3"
+            android:textSize="@dimen/small_text_size"
+            app:layout_constraintBottom_toTopOf="@id/inner_guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="对方忙"
+            tools:textColor="@color/gray_color_level_3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rl_mask"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#99373b45"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/img_avatar_inactive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_avatar_inactive">
+
+        <com.hiscene.publiclib.widget.loadingView.AVLoadingIndicatorView
+            android:id="@+id/indicator"
+            style="@style/AVLoadingIndicatorView.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorName="BallBeatIndicator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

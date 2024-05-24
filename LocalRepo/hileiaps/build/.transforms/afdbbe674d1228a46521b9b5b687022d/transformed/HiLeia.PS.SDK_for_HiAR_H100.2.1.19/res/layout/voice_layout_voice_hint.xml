@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hiscene.presentation.ui.widget.voice.BottomVoiceView
+        android:id="@+id/bottom_view"
+        android:layout_width="608dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/voice_shape_bg_voice_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.hiscene.presentation.ui.widget.voice.MoreVoiceView
+        android:id="@+id/more_view"
+        android:layout_width="608dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/bottom_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="63dp"
+        android:layout_height="33dp"
+        android:background="@mipmap/voice_bg_close_more"
+        android:gravity="center_vertical"
+        android:paddingStart="29dp"
+        android:text="@string/voice_close_more"
+        android:visibility="gone"
+        android:textColor="#ff051741"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/bottom_view"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_view"
+        app:layout_constraintTop_toTopOf="@id/bottom_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

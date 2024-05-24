@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/voice_shape_bg_voice_bottom">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_icon_command"
+        android:layout_margin="10dp"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@mipmap/voice_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_record_commands"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintHorizontal_weight="1"
+        android:overScrollMode="never"
+        app:layout_constraintLeft_toRightOf="@+id/iv_icon_command"
+        app:layout_constraintRight_toLeftOf="@+id/vb_help"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_text_tags"/>
+
+    <com.hiscene.presentation.ui.widget.voice.VoiceButton
+        android:id="@+id/vb_help"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_text="@string/help_info"
+        app:drawable_lottie_src="@drawable/ic_help_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

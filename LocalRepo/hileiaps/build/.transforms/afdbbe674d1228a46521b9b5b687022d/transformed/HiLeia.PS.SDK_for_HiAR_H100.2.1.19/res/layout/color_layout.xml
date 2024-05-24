@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_color"
+    android:layout_width="@dimen/toolbar_width"
+    android:layout_height="wrap_content">
+
+    <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+        android:id="@+id/btn_choose_blue"
+        android:layout_width="@dimen/color_item_icon_width"
+        android:layout_height="@dimen/color_item_icon_height"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:cropToPadding="true"
+        android:padding="10dp"
+        android:src="@drawable/icon_colour_blue"
+        app:layout_constraintBottom_toTopOf="@+id/btn_choose_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="ContentDescription" />
+
+    <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+        android:id="@+id/btn_choose_green"
+        android:layout_width="@dimen/color_item_icon_width"
+        android:layout_height="@dimen/color_item_icon_height"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:cropToPadding="true"
+        android:padding="10dp"
+        android:src="@drawable/icon_colour_green"
+        app:layout_constraintBottom_toTopOf="@+id/btn_choose_yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_choose_blue"
+        tools:ignore="ContentDescription" />
+
+    <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+        android:id="@+id/btn_choose_yellow"
+        android:layout_width="@dimen/color_item_icon_width"
+        android:layout_height="@dimen/color_item_icon_height"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:cropToPadding="true"
+        android:padding="10dp"
+        android:src="@drawable/icon_colour_yellow"
+        app:layout_constraintBottom_toTopOf="@+id/btn_choose_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_choose_green"
+        tools:ignore="ContentDescription" />
+
+    <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+        android:id="@+id/btn_choose_red"
+        android:layout_width="@dimen/color_item_icon_width"
+        android:layout_height="@dimen/color_item_icon_height"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:cropToPadding="true"
+        android:padding="10dp"
+        android:src="@drawable/icon_colour_red"
+        app:layout_constraintBottom_toTopOf="@+id/btn_choose_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_choose_yellow"
+        tools:ignore="ContentDescription" />
+
+    <com.hiscene.presentation.ui.widget.HiAlphaImageButton
+        android:id="@+id/btn_choose_purple"
+        android:layout_width="@dimen/color_item_icon_width"
+        android:layout_height="@dimen/color_item_icon_height"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:cropToPadding="true"
+        android:padding="10dp"
+        android:src="@drawable/icon_colour_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_choose_red"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

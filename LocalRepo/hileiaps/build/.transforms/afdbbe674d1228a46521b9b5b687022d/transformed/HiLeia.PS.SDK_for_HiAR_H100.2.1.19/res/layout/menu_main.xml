@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="102dp"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_pop_menu"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pop_tvCreateGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:drawableStartCompat="@drawable/icon_create_group"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="@string/create_group"
+        android:textColor="@color/white_color"
+        android:textSize="12sp" />
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvAddFriend"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:background="@color/gray_color_level_5"-->
+    <!--            android:drawableLeft="@mipmap/icon_company"-->
+    <!--            android:drawablePadding="20dp"-->
+    <!--            android:gravity="center_vertical"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="添加好友"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="15sp"/>-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvScan"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:background="@color/gray_color_level_5"-->
+    <!--            android:drawableLeft="@mipmap/icon_email"-->
+    <!--            android:drawablePadding="20dp"-->
+    <!--            android:gravity="center_vertical"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="扫一扫"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="15sp"/>-->
+
+</LinearLayout>
