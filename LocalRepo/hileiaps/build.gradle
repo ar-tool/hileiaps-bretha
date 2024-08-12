@@ -1,2 +1,2 @@
 configurations.maybeCreate("default")
-artifacts.add("default", file("HiLeia.PS.SDK_for_HiAR_H100.2.1.19.aar"))
+artifacts.add("default", file("HiLeia.PS.SDK_for_HiAR_H100.3.1.0.aar"))
